@@ -1,10 +1,8 @@
 title: Blog of Veikko M.O.T. Nyfors, Hybrid Quantum ICT consultant
 author: veikkonyfors
 email: veikkonyfors@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-Quantum Mechanics demystified, a try
+description: Quantum Mechanics demystified, a try
 
-# social links
 twitter_username: veikkonyfors # DO NOT include the @ character, or else the build will fail!
 github_username:  veikkonyfors # DO NOT include the @ character, or else the build will fail!
 
