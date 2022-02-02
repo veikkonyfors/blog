@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "About Quantum Mysteries"
+---
+
+
 # About Quantum mysteries 
 
 In this blog I am trying to clarify mysteries of Quantum Mechanics, mainly to myself. On very high level to start with. Pointed out with pretty simple minded common sense terms.  
