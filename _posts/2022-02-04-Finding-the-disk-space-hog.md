@@ -25,7 +25,7 @@ Could be HUGE file or a few, or could be tons of smaller ones not being reqularl
 
 Below oneliner accomplishes exactly that
 
-find . -type d -exec du -sS {} ; <code>&#124;</code> sort -nr <code>&#124;</code> head
+find . -type d -exec du -sS {} \; <code>&#124;</code> sort -nr <code>&#124;</code> head
 
 Unfortunately not all Unix systems have du with -S option available natively (S for separate). 
 Unfortunately MacOSX is BSD based, whose du doesn't recognize -S. For such systems, below more cumbersome bash oneliner will do the job. Requires Perl though.
