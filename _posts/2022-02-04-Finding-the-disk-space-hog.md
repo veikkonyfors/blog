@@ -25,12 +25,12 @@ Could be HUGE file or a few, or could be tons of smaller ones not being reqularl
 
 Below oneliner accomplishes exactly that
 
-find . -type d -exec du -sS {} ; | sort -nr | head
+find . -type d -exec du -sS {} ; <code &#124; /> sort -nr <code &#124; /> head
 
 Unfortunately not all Unix systems have du with -S option available natively (S for separate). 
 Unfortunately MacOSX is BSD based, whose du doesn't recognize -S. For such systems, below more cumbersome bash oneliner will do the job. Requires Perl though.
 
-IFS=$'\n'; for i in $(find . -type d); do cd $i;find . -maxdepth 1 -type f -exec du {} \; | cut -f 1 -d' ' | perl -ne'$s=<>; while(<>) {$s+=$_;} chomp $s; print "$s "'; pwd; cd -; done  | grep ^[0-9] | sort -nr | head
+IFS=$'\n'; for i in $(find . -type d); do cd $i;find . -maxdepth 1 -type f -exec du {} \; <code>&#124;</code> cut -f 1 -d' ' <code &#124; /> perl -ne'$s=<>; while(<>) {$s+=$_;} chomp $s; print "$s "'; pwd; cd -; done  <code &#124; /> grep ^[0-9] <code &#124; /> sort -nr <code &#124; /> head
 
 Sample below. Having a look on the first one revealed thousands of left over cached files from skype. Suspecting the second one is similar case from Chrome.
 
