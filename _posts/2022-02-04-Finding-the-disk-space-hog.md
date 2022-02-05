@@ -9,7 +9,7 @@ The same goes on on my Lenovo Ubuntu laptop, even if the disk is a bit bigger th
 
 Routinely running production systems have procedures in place to clean up unessential information to release disk space.
 But even there, every now and then it may happen disk space is running short. Pretty normal quick fix a'la ITIL is to add disk space.
-At some point eventually, the support staff need to sort out is it just the businesses running better than ever requiring additional disk space,
+At some point though, the support staff need to sort out is it just the businesses running better than ever requiring additional disk space,
 or is there a disk space HOG around.
 
 What can one do? One should dig up the space HOG.
@@ -17,21 +17,21 @@ What can one do? One should dig up the space HOG.
 In my experience the issue can be two fold: There can be some huge files around, or there can be tons of small files accumulated somewhere.
 In both cases those should be found somehow.
 
-In Unix systems, du command is most often used to detect the problem spots. Du alone is a bit laborious though.
-One need to iterate sometimes quite a lot to find the spot, because of du's recursive nature of incorporating the whole directory tree into total amount.
+In Unix systems, du command is most often used to detect the problem spots with disk space. Du alone is a bit laborious though.
+One need to iterate sometimes quite a few times to find the spot. That's because of du's recursive nature of incorporating the whole directory subtree into total amount.
 
-What I have learnt is that one really should pinpoint directories individually or separately, how much of disk space is used by flat files in each.
-Could be HUGE file or a few, or could be tons of smaller ones not being reqularly cleaned up.
+What I have learnt is that one really should pinpoint directories individually, or separately, how much of disk space is used by flat files in each.
+Could be HUGE file or a few, or could be tons of smaller ones not being regularly cleaned up.
 
-Below oneliner accomplishes exactly that
+Below Unix oneliner accomplishes exactly that
 
 find . -type d -exec du -sS {} \; <code>&#124;</code> sort -nr <code>&#124;</code> head
 
 Unfortunately not all Unix systems have du with -S option available natively (S for separate). 
-Unfortunately MacOSX is BSD based, whose du doesn't recognize -S. For such systems, below more cumbersome bash oneliner will do the job. Requires Perl though.
+E.g. MacOSX is based on BSD (Berkeley Software Distribution), where du doesn't recognize -S. For such systems, below a bit more cumbersome bash oneliner will do the job. Requires Perl though.
 
 NOTE!!!!
-Copy pasting the below command into the command line doen't seem to work currently. Need to sort out why.
+Copy pasting the below command into the command line doesn't seem to work currently. Need to sort out why.
 
 IFS=$'\n'; for i in $(find . -type d); do cd $i;find . -maxdepth 1 -type f -exec du {} \; <code>&#124;</code> cut -f 1 -d' ' <code>&#124;</code> perl -ne'$s=<>; while(<>) {$s+=$_;} chomp $s; print "$s "'; pwd; cd -; done  <code>&#124;</code> grep ^[0-9] <code>&#124;</code> sort -nr <code>&#124;</code> head
 
