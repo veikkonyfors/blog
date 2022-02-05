@@ -30,6 +30,9 @@ find . -type d -exec du -sS {} \; <code>&#124;</code> sort -nr <code>&#124;</cod
 Unfortunately not all Unix systems have du with -S option available natively (S for separate). 
 Unfortunately MacOSX is BSD based, whose du doesn't recognize -S. For such systems, below more cumbersome bash oneliner will do the job. Requires Perl though.
 
+NOTE!!!!
+Copy pasting the below command into the command line doen't seem to work currently. Need to sort out why.
+
 IFS=$'\n'; for i in $(find . -type d); do cd $i;find . -maxdepth 1 -type f -exec du {} \; <code>&#124;</code> cut -f 1 -d' ' <code>&#124;</code> perl -ne'$s=<>; while(<>) {$s+=$_;} chomp $s; print "$s "'; pwd; cd -; done  <code>&#124;</code> grep ^[0-9] <code>&#124;</code> sort -nr <code>&#124;</code> head
 
 Sample below. Having a look on the first one revealed thousands of left over cached files from skype. Suspecting the second one is similar case from Chrome.
