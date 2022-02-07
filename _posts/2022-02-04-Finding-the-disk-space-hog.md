@@ -3,6 +3,7 @@ layout: default
 title:  "Finding the disk space hog"
 ---
 
+Who on earth is eating all the disk space this time?
 
 Pretty often I find myself in situation where the disk space on my MacBook air is running out. SSD disk is only 120GB.
 The same goes on on my Lenovo Ubuntu laptop, even if the disk is a bit bigger there. I guess each and everyone has had the same problem over the times.
