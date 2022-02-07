@@ -33,7 +33,7 @@ E.g. MacOSX is based on BSD (Berkeley Software Distribution), where du doesn't r
 NOTE!!!!
 Copy pasting the below command into the command line doesn't seem to work currently. Need to sort out why.
 
-IFS=$'\n'; for i in $(find . -type d); do cd $i;find . -maxdepth 1 -type f -exec du {} \; <code>&#124;</code> cut -f 1 -d' ' <code>&#124;</code> perl -ne'$s=<>; while(<>) {$s+=$_;} chomp $s; print "$s "'; pwd; cd -; done  <code>&#124;</code> grep ^[0-9] <code>&#124;</code> sort -nr <code>&#124;</code> head
+IFS=$&apos;\n&apos;; for i in $(find . -type d); do cd $i;find . -maxdepth 1 -type f -exec du {} \; <code>&#124;</code> cut -f 1 -d&apos; &apos; <code>&#124;</code> perl -ne&apos;$s=<>; while(<>) {$s+=$_;} chomp $s; print &quot;$s &quot;&apos;; pwd; cd -; done  <code>&#124;</code> grep ^[0-9] <code>&#124;</code> sort -nr <code>&#124;</code> head
 
 Sample below. Having a look on the first one revealed thousands of left over cached files from skype. Suspecting the second one is similar case from Chrome.
 
