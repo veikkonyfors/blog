@@ -35,7 +35,7 @@ Tunneling is taking place e.g. in the Sun, making it possible for the Sun to pro
 
 In double slit experiment similar thing to tunneling seems to go on. Wave function for the photon allows part of photon's 'energy' go through one slit and the rest goes through the other. Building up the interference on the other side.
 
-Doesn't sound so mysterious at all to me. I must have misunderstood the whole thing, Feynman would say. ;-)
+Doesn't sound so mysterious at all to me. I must have misunderstood the whole thing, Feynman might suggest. ;-)
 
 
 ## Interference
