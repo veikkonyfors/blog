@@ -8,11 +8,13 @@ I plan to talk mostly about Quantum Mechanics with a layman's attitude.
 Might be I have a few words on ICT as well, probably not as much as a layman at all.  
 Without ruling environmental sustainability out. 
 
-
-<ul>
-  {% for post in site.posts %}
-    <li>
+{% for tag in site.tags %}
+  <h3>{{ tag[0] }}</h3>
+  <ul>
+    {% for post in tag[1] %}
+      <li>
       <a href="/blog{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

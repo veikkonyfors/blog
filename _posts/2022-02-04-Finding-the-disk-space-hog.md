@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Finding the disk space hog"
+tag: Unix
 ---
 
 Hunting who on earth is eating all the disk space this time?
