@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "About Quantum Mysteries"
+title:  "What's light"
 tag: Quantum Electrodynamics
 ---
 
