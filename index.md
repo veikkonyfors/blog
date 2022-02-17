@@ -16,7 +16,7 @@ And yet, I am a bit afraid I can't help of including some anecdotes from along t
    </li>
 {% endfor %}
 </ul>
-
+<HR>
 {% for tag in site.tags %}
   <h3 ID="{{ tag[0] }}">{{ tag[0] }}</h3>
   <ul>
