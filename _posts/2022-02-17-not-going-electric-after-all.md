@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Not going electric after all"
-tag: Anecdotes
+tag: Sustainability
 ---
 
 ## Not going electric after all
