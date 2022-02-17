@@ -22,7 +22,7 @@ And yet, I am a bit afraid I can't help of including some anecdotes from along t
   <ul>
     {% for post in tag[1] %}
       <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="/blog{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
