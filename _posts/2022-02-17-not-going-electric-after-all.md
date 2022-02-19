@@ -17,15 +17,23 @@ Well, all that I was probably guessing beforehand, and planned renting a fully f
 
 During cold (>-20 Celsius) periods, charging takes longer time. A lot of power is consumed to warm up the car interiors. These might bring problems even for the shorter distances then.
 
-Producing a new electric car is not sustainable at all. Lots of carbondioxside is released during manufacturing process. Minerals and other raw materials, some of them very rare, are consumed in huge amounts. Specifically for battery minerals huge areas of untouched nature has been destroyed. Even whole lakes have been poisoned.
-I would rather drive the old diesel car till the end before changing to a new one.
+Producing a new electric car is not sustainable at all.  
+Lots of carbondioxide is released during manufacturing process. To be more exact, amount of CO2 emission in manufacturing an electric car is somewhere in the class of 5 to 20 tons, depending on the size of the car and type of battery.
+Minerals and other raw materials, some of them very rare, are consumed in huge amounts. Specifically for battery minerals huge areas of untouched nature has been destroyed. Even whole lakes have been poisoned.
+
+Even if electric car is not burning fossil fuel directly, preserving nature is fully dependent on how the electricity was produced. If it was by coal, gas or oil, electric car would be even a bigger threat to the climate than an ordinary car with combustion engine would be. Efficiency of producing electricity e.g. from coal is only 50-55%, you see.
 
 Also there is the problem of the battery aging, of which I think is very little data yet available to draw conclusions. What I have heard though, is that fairly new electric cars have been brought to service with failing battery. Surprise and disappointment has been quite a shock when the car shop announces a new battery has to be installed, old one being broken. That makes 20000 Euros. Thank You.
 
 This starts to look I am not going to switch to fully electric car unless forced to do so.
 
-Final nail to the coffin was a road trip to Ruka skiing resort. Round trip being almost 2000 Km. Consumption of diesel fuel on that trip was 4.1 l/100km. And I wasn't blocking the road. On the contrary.
-With this kind of consumption I will produce far less carbondioxide driving this kind of car for the rest of my life, compared to the amounts released while producing a new electric car. Not to mention wasted nature nor hazardous waste.
+Final nail to the coffin was a road trip to Ruka skiing resort. Round trip being almost 2000 Km. Consumption of diesel fuel on that trip was 4.1 l/100km. And I wasn't blocking the road. I.e. not trying to save fuel. On the contrary, I wasn't leader of the queue, rather I was tailing ones for short times and the again riding free. :-)
+During this trip I was producing less than 250 Kg of CO2 by the burnt diesel fuel.
+With this kind of consumption I will produce far less carbondioxide driving this kind of car for the rest of my life, compared to the 10000 Kg released while producing an average electric car. Not to mention wasted nature nor hazardous waste.
+
+Luckily, here in Finland electricity is produced minimally with fossil fuels. Thus riding one after having got hold of one is not a crime against climate. If electricity is produced mainly by fossil fuel, electric cars really should be banned on such countries.
+
+The car by the way was a BMW 116d F20, 2012. How on earth we managed to pack winter sports gear of 4 in that kind of a car. That's described in another article.
 
 
 
