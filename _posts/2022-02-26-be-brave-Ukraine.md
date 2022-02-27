@@ -19,4 +19,4 @@ recklessly
 We pray,
 For you,
 To beat,
-Your adversary
+Your intruder
