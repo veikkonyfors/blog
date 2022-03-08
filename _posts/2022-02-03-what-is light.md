@@ -15,8 +15,8 @@ Quantummechanically light is made of a bundles of energy called photons. Photons
 Photon is born once an electron emits one. This can happen in Sun's core (see Tunneling) or it can happen e.g. in your electric torch. Once reaching space (or air in the latter case), it travels like a wave mostly without interruption, as the surroundings is mostly empty.
 
 When the photon hits an atom, it's energy causes one of atom's electrons to be excited, i.e. it jumps to higher energy level by the amount of photons energy. Atom absorbs the photon. However, this excited state is not stable, electrons prefer staying on their normal energy level in the atom. Thus, after a short while, electron returns back to normal energy level. This causes another bundle of energy to be released in the form of a photon. Atom emits a photon.
-This bouncing goes on and on everywhere where atoms and photons impact. In the sun, in the torch's bulb end even in the air. But in lesser amount there, as atoms in the air are so sparsely located.
-It is like throwing a ball against a a wall, only that the ball coming back would be a different one from that thrown.
+This bouncing goes on and on everywhere where atoms and photons impact. In the sun, in the torch's bulb end even in the air. But in lesser amount there, as atoms in the air are so sparsely located.  
+It's like throwing a ball against the wall. Ball flying through the air without bumping into anything and once reaching the wall jumps backwards. Only that the ball coming back would be a different one from that thrown.
 
 Once the photon then hits a cone cell in our eye (or a rod cell in twilight), the energy bundle's journey carries on in our optic nerves.
 But that's already another story.
