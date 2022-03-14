@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Seeing through glass"
-tag: tag: Quantum Electrodynamics
+tag: Quantum Electrodynamics
 ---
 
 Why do we see through a class? And yet we don't see through it's frame. Nor the wooden wall besides.
