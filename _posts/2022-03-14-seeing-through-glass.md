@@ -4,11 +4,11 @@ title:  "Seeing through glass"
 tag: Quantum Electrodynamics
 ---
 
+## Seeing through glass
+
 Why do we see through a class? And yet we don't see through it's frame. Nor the wooden wall besides.
 
-In article [What's light](https://veikkonyfors.github.io/blog/2022/02/03/what-is-light.html), light is described as being photons traveling in spacetime as bundles of energy.  
-
-Every now and then hitting an atom of material getting on the way. Atom absorbing the photon, causing one of it's electrons to be excited on higher energy level. Only to drop down to normal energy level after a short while, with emitting a photon back. It's like kicking a ball to a wall and it bouncing back. Only that the ball would be different one from that kicked. This is what we call reflection of light.
+In article [What's light](https://veikkonyfors.github.io/blog/2022/02/03/what-is-light.html), light is described as being photons traveling in spacetime as bundles of energy. Every now and then hitting an atom of material getting on the way. Atom absorbing the photon, causing one of it's electrons to be excited on higher energy level. Only to drop down to normal energy level after a short while, with emitting a photon back. It's like kicking a ball to a wall and it bouncing back. Only that the ball would be different one from that kicked. This is what we call reflection of light.
 
 Then why doesn't this take place with transparent glass?
 
