@@ -1,7 +1,5 @@
 ---
 title: "Welcome to my blog"
-google-site-verification: "Dx1a2IA5ul0xOPUZM9xsf2Qqj4JqjTnu61Dr0ZbXepM"
-
 ---
 
 I'm glad you are here.
@@ -13,8 +11,6 @@ And yet, I am a bit afraid I can't help of including some anecdotes from along t
 Oh dear, now I had some poems included.  
 I am now uncertain whether I can help of not adding whatever categories I feel tempting.  
 You'll see it beneath :-)
-
-{% if page.google-site-verification %}<meta name="google-site-verification" content="{{ page.google-site-verification }}">{% endif %}
 
 <ul>
 {% for tag in site.tags %}
