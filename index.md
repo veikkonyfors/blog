@@ -14,6 +14,8 @@ Oh dear, now I had some poems included.
 I am now uncertain whether I can help of not adding whatever categories I feel tempting.  
 You'll see it beneath :-)
 
+{% if page.google-site-verification %}<meta name="google-site-verification" content="{{ google-site-verification }}">{% endif %}
+
 <ul>
 {% for tag in site.tags %}
    <li>
