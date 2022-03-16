@@ -2,6 +2,8 @@
 title: "Welcome to my blog"
 ---
 
+<meta name="google-site-verification" content="Dx1a2IA5ul0xOPUZM9xsf2Qqj4JqjTnu61Dr0ZbXepM" />
+
 I'm glad you are here.
 
 I plan to talk mostly about Quantum Mechanics with a layman's attitude.  
