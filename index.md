@@ -1,8 +1,8 @@
 ---
 title: "Welcome to my blog"
----
+google-site-verification: "Dx1a2IA5ul0xOPUZM9xsf2Qqj4JqjTnu61Dr0ZbXepM"
 
-<meta name="google-site-verification" content="Dx1a2IA5ul0xOPUZM9xsf2Qqj4JqjTnu61Dr0ZbXepM" />
+---
 
 I'm glad you are here.
 
