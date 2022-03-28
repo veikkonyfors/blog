@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Being a particle"
+description: "Is photon, electron or other subatomic objects particles, waves, both or neither"
 tag: Quantum Electrodynamics
 ---
 
