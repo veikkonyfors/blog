@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Entanglement"
+description: "How entanglement is created and how does it show up"
 tag: Quantum Mysteries
 ---
 
