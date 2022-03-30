@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Finding the disk space hog"
+description: "Find disk usage per separate directory for the whole tree"
 tag: Unix
 ---
 
