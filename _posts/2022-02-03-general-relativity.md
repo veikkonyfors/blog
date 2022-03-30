@@ -7,8 +7,9 @@ katex: true
 
 ## General Relativity
 
-$$\text{General Relativity:} \hspace{1em} E=\sqrt {p^{2}c^{2}+m^{2}c^{4}}\\
+$$\text{Special Relativity:} \hspace{1em} R_{ab} - \frac{1}{2}Rg_{ab}=T_{ab}\\
 $$
+
 
 
 
