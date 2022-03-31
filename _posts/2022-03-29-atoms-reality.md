@@ -2,7 +2,7 @@
 layout: default
 title:  "Atom's reality"
 description: "Wave-particle duality for an atom: atom's not a particle at any point"
-tag: Quantum Mysteries
+tag: Quantum Electrodynamics
 ---
 
 # Atom's reality 
