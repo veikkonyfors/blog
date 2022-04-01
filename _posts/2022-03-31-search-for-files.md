@@ -17,7 +17,7 @@ It also has a few advantages over the rgep, for which reason I make use of this 
 
 
 find . -type f ! -name &apos;*.swp&apos; -exec grep -I -q . {} \; -print |
-xargs -i{} perl -lne &apos;print "$ARGV: $_" if /ViW..e/&apos; {} |
+xargs -i{} perl -lne &apos;print &quot;$ARGV: $_&quot; if /ViW..e/&apos; {} |
 grep -v .metadata  
 
   
