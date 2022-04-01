@@ -16,13 +16,13 @@ For those system one can use the below one-liner to do the thing.
 It also has a few advantages over the rgep, for which reason I make use of this one-liner also in Linux systems.
 
 
-find . -type f ! -name '*.swp' -exec grep -I -q . {} \; -print |
-xargs -i{} perl -lne 'print "$ARGV: $_" if /ViW..e/' {} |
+find . -type f ! -name &apos;*.swp&apos; -exec grep -I -q . {} \; -print |
+xargs -i{} perl -lne &apos;print "$ARGV: $_" if /ViW..e/&apos; {} |
 grep -v .metadata  
 
   
 Sample:  
-pappa@pappa-ThinkPad-X270:~/wrk$ find . -type f ! -name '*.swp' -exec grep -I -q . {} \; -print | xargs -i{} perl -lne 'print "$ARGV: $_" if /ViW..e/' {} | grep -v .metadata  
+pappa@pappa-ThinkPad-X270:~/wrk$ find . -type f ! -name '*.swp' -exec grep -I -q . {} \; -print | xargs -i{} perl -lne 'print &quot;$ARGV: $_&quot; if /ViW..e/' {} | grep -v .metadata  
 ./ihop_jupyterlab/ihop_sent.py: # 26.10.2021 VN/ViWare  
 ./ihop_jupyterlab/ihop.py: # 26.10.2021 VN/ViWare  
 ./ihop_jupyterlab/ihop.ipynb:     "# 26.10.2021 VN/ViWare\n",  
