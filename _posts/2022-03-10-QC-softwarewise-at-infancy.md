@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Quantum Computing softwarewise at infancy"
+description: "Quantum computers at Eniac level. Huge evolution required to reach class of current binary computers"
 tag: Quantum Computing
 ---
 
