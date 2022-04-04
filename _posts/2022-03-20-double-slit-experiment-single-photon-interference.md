@@ -1,11 +1,11 @@
 ---
 layout: default
-title:  "Double slit experiment single photon interference"
+title:  "Double slit experiment's single photon interference"
 description: "How or why a single photon interacts with itself in double slit experiment"
 tag: Quantum Mysteries
 ---
 
-## Double slit experiment
+## Double slit experiment's single photon interference
 
 From 17th century onwards light was believed to be formed by particles as per Sir Isaac Newton's understanding.  
 At the very beginning of 19th century, Thomas Young proved light must be of wave nature by his double slit experiment.   
