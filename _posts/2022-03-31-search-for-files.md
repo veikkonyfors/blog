@@ -20,6 +20,12 @@ find . -type f ! -name &apos;*.swp&apos; -exec grep -I -q . {} \; -print |
 xargs -i{} perl -lne &apos;print &quot;$ARGV: $_&quot; if /ViW..e/&apos; {} |
 grep -v .metadata  
 
+
+Explained:    
+Finds non-binary flat files from current directory tree with name not ending to .swp  
+Pipes each file to xargs running a perl one-liner to print path+line containing words matching regexp  "ViWa..e"  
+Finally skipping lines containing .metadata using grep -v , as we do not want to see the huge number of files in metadata of some IDE.  
+
   
 Sample:  
 pappa@pappa-ThinkPad-X270:~/wrk$ find . -type f ! -name '*.swp' -exec grep -I -q . {} \; -print | xargs -i{} perl -lne 'print &quot;$ARGV: $_&quot; if /ViW..e/' {} | grep -v .metadata  
@@ -43,7 +49,3 @@ pappa@pappa-ThinkPad-X270:~/wrk$ find . -type f ! -name '*.swp' -exec grep -I -q
 ./eclws/util/shell/frgrep.md: \#                find . -type f ! -name '*.swp' | xargs -i{} perl -lne 'print "$ARGV: $_" if /ViWare/' {}  
 pappa@pappa-ThinkPad-X270:~/wrk$ 
 
-Explained:    
-Finds non-binary flat files from current directory tree with name not ending to .swp  
-Pipes each file to xargs running a perl one-liner to print path+line containing words matching regexp  "ViWa..e"  
-Finally skipping lines containing .metadata using grep -v , as we do not want to see the huge number of files in metadata of some IDE.  
