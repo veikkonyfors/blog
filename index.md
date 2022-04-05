@@ -26,7 +26,7 @@ You'll see it beneath :-)
   <ul>
     {% for post in tag[1] %}
       <li>
-      <a href="https://github.com/veikkonyfors/blog{{ post.url }}">{{ post.title }}</a>
+      <a href="https://veikkonyfors.github.io/blog{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
