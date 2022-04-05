@@ -7,7 +7,7 @@ katex: true
 
 ## General Relativity
 
-$$\text{Special Relativity:} \hspace{1em} R_{ab} - \frac{1}{2}Rg_{ab}=T_{ab}\\
+$$\text{General Relativity:} \hspace{1em} R_{ab} - \frac{1}{2}Rg_{ab}=T_{ab}\\
 $$
 
 

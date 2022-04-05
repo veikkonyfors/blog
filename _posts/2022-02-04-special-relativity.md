@@ -7,7 +7,7 @@ katex: true
 
 ## Special Relativity
 
-$$\text{General Relativity:} \hspace{1em} E=\sqrt {p^{2}c^{2}+m^{2}c^{4}}\\
+$$\text{Special Relativity:} \hspace{1em} E=\sqrt {p^{2}c^{2}+m^{2}c^{4}}\\
 $$
 
 
