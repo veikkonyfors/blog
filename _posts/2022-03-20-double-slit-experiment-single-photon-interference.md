@@ -7,10 +7,10 @@ tag: Quantum Mysteries
 
 ## Double slit experiment's single photon interference
 
-From 17th century onwards light was believed to be formed by particles as per widely adopted Sir Isaac Newton's understanding.  
+From 17th century onwards light was believed to be formed of particles as per widely adopted Sir Isaac Newton's understanding.  
 At the very beginning of 19th century, Thomas Young proved light must be of wave nature by his double slit experiment.   
 Which ones is it in the end? See [Being a particle](https://veikkonyfors.github.io/blog/2022/03/15/being-a-particle.html) for that.  
-Later on double slit experiment has been refined in various ways. E.g. it has been shown to work for electrons, atoms and even molecules of moderate sizes. See some more details on atom's case in article [Atoms's reality](https://veikkonyfors.github.io/blog/2022/03/29/atoms-reality.html)
+Later on double slit experiment has been refined in various ways. E.g. it has been shown to work for electrons, atoms and even molecules of moderate sizes. See some more details on atom's case in article [Atom's reality](https://veikkonyfors.github.io/blog/2022/03/29/atoms-reality.html)
 
 One of the landmarks was repeating the test with shooting photons one by one, which advanced laser techniques made possible in 1970's.  
 When single photons were fired one at a time, but in sequence one after another, an interference pattern appears. A proof for being of wave nature, isn't it? At least by common understanding. As if consecutive photons were aware of each other and ending up interacting with each other.  
