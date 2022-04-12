@@ -13,13 +13,16 @@ But what about the friend on earth, who is able to see all this in some mysterio
 So, if a something happens simultaneously at two spots, in perspective of somebody being stable with those spots, events anyhow
 appear to take place at different times for someone moving at some speed relative to the first person.  
 In above scenario, the person on earth observes the photon reaching back clock and photon reaching front clock at different times, even if the person in the ship experience those events taking place simultaneously.  
-Time difference between the photon hitting the back clock and photon hitting the front clock for the person on earth would be
+Time difference between the photon hitting the back clock and photon hitting the front clock for the person on earth would be  
+
 $$δt=\frac{\frac{0.9c*50m}{c^2}}{\sqrt{1-\frac{(0.9c)^2}{c^2}}}=
 \frac{\frac{0.9*299792458m/s*50m}{(299792458m/s)^2}}{\sqrt{1-0.9^2}}=
 \frac{\frac{13490660610}{89875517873681764}}{\sqrt{1.9}}s=
 .000000150103842s \\
 \approx 1.5*10^{-7}s
 $$
+
+Not a lot, but still a difference.
 
 
 
