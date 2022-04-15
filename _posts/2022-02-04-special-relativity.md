@@ -15,6 +15,7 @@ m=\frac{m_{0}}{\sqrt {1-\frac{v^{2}}{c^{2}}}}\\
 $$
 
 ## Relativity factor
+
 $$
 g=\frac{1}{\sqrt {1-\frac{v^{2}}{c^{2}}}}
 $$
