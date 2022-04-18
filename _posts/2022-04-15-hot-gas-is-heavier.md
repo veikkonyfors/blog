@@ -18,7 +18,7 @@ $$m=\frac{m_{0}}{\sqrt {1-\frac{v^{2}}{c^{2}}}}$$
 
 What on earth! Do I need to take lower benches in sauna from now on? Would it really be hotter there? For a moment I thought I had been wrong, but I was mistaken! Do I need to forgive myself instead of the person on the lower bench. :-)
 
-All sauna enthusiasts, relax. After a second thought I realized what's up. The volume of the pot doesn't increase. Whereas the hot-air balloon expands as air inside gets heated. Density decreases causing the overall effect of balloon going up by Boyle's law.
+All sauna enthusiasts, relax. After a second thought I realized what's up. The volume of the pot doesn't increase. Whereas the hot-air balloon expands as air inside gets heated. Density decreases causing the overall effect of balloon going up by Boyle's law. As do the hot air in sauna.
 
 More on Special relativity at my [blog](https://veikkonyfors.github.io/blog/#Special%20Relativity).
 
