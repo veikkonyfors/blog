@@ -1,7 +1,7 @@
 -- 
 layout: default
 title:  "Measurement problem explained"
-description: "Why does observation destroy interference in double slit experiment. It's not the observation, but interaction in general."
+description: "Observation destroy interference in double slit experiment, eh? Not observation, but interaction in general."
 tag: Quantum Mysteries
 ---
 
