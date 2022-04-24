@@ -1,7 +1,7 @@
 -- 
 layout: default
 title:  "Measurement problem explained"
-description: "Observation destroy interference in double slit experiment, eh? Not observation, but interaction in general."
+description: "Measurement problem explained: It's not observation but interaction that does it."
 tag: Quantum Mysteries
 ---
 
