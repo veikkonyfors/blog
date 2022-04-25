@@ -23,7 +23,7 @@ The ones making through, they either travel fully through one slit or partially 
 
 But it gets even more amazing, when a detector is assembled on the slit(s) to find out through which slit the photon traveled. Guess what, interference pattern vanished! I.e. observing the photon just prior or after the slit stripped of the interference phenomenon. This is referred to as the 'Measurement Problem'. Making an observation on a particle in superposition makes it to loose it's superposition and to adopt a classical state instead. This is also referred as collapse of the wavefunction.
 
-How could this be explained? Why making an observation will destroy the interference? I will give it a try in [Measurement problem explained (to be composed)](https://veikkonyfors.github.io/blog/2022/03/21/measurement-problem-explained.html).
+How could this be explained? Why making an observation will destroy the interference? I will give it a try in [Measurement problem explained](https://veikkonyfors.github.io/blog/2022/03/21/measurement-problem-explained.html).
 
 
 
