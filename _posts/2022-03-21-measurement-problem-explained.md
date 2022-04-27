@@ -7,6 +7,8 @@ tag: Quantum Mysteries
 
 ## Measurement problem explained
 
+### Possibly fake news! Superposition misunderstood so far. Under construction per new understanding of superposition.
+
 One of the great mysteries in quantum mechanics is called 'Measurement Problem': a quantum system looses it's superposition if it is observed in any sense. Let's have a closer look on this.
 
 A [quantum object](https://veikkonyfors.github.io/blog/2022/04/16/quantum-objects.html), like a photon, is normally in a state called superposition in respect to any of it's properties, e.g. location.
