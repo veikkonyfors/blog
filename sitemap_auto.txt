@@ -1,8 +1,5 @@
 ---
 layout: null
 ---
-  {% for post in site.posts %}
-    {% unless post.published == false %}
-    {{ site.url }}{{ post.url }}
-    {% endunless %}
-  {% endfor %}
+{{ site.url }}/index.html {% for post in site.posts %} {% unless post.published == false %}
+{{ site.url }}{{ post.url }} {% endunless %}   {% endfor %}
