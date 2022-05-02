@@ -19,11 +19,14 @@ During cold (>-20 Celsius) periods, charging takes longer time. A lot of power i
 
 Producing a new electric car is not sustainable at all.  
 Lots of carbondioxide is released during manufacturing process. To be more exact, amount of CO2 emission in manufacturing an electric car is somewhere in the class of 5 to 20 tons, depending on the size of the car and type of battery.
-Minerals and other raw materials, some of them very rare, are consumed in huge amounts. Specifically for battery minerals huge areas of untouched nature has been destroyed. Even whole lakes have been poisoned.
+Minerals and other raw materials, some of them very rare, are consumed in huge amounts. Specifically for battery minerals huge areas of untouched nature has been destroyed. Even whole lakes have been poisoned.  
+Of course new more sustainable battery techniques are being developed. But don't expect those to be available in any time soon.
 
-Even if electric car is not burning fossil fuel directly, preserving nature is fully dependent on how the electricity was produced. If it was by coal, gas or oil, electric car would be even a bigger threat to the climate than an ordinary car with combustion engine would be. Efficiency of producing electricity e.g. from coal is only 50-55%, you see.
+Even if electric car is not burning fossil fuel directly, preserving nature is fully dependent on how the electricity was produced. If it was by coal, gas or oil, electric car would be even a bigger threat to the climate than an ordinary car with combustion engine would be. Efficiency of producing electricity e.g. from coal is only 50-55%, you see.  
+Finland has been importing electricity from Russia. Who knows how it is produced there. Using coal in the worst case.  
+Lot's of countries are importing fossil fuels from Russia and producing electricity of it. Coal again being the most evil one.
 
-Also there is the problem of the battery aging, of which I think is very little data yet available to draw conclusions. What I have heard though, is that fairly new electric cars have been brought to service with failing battery. Surprise and disappointment has been quite a shock when the car shop announces a new battery has to be installed, old one being broken. That makes 20000 Euros. Thank You.
+Also there is the problem of the battery aging, of which there is very little data yet available to draw any conclusions. What I have heard though, is that fairly new electric cars have been brought to service with failing battery. Surprise and disappointment has been quite a shock when the car shop announces a new battery has to be installed, old one being broken. That makes 20000 Euros. Thank You.
 
 This starts to look I am not going to switch to fully electric car unless forced to do so.
 
@@ -31,9 +34,10 @@ Final nail to the coffin was a road trip to Ruka skiing resort. Round trip being
 During this trip I was producing less than 250 Kg of CO2 by the burnt diesel fuel.
 With this kind of consumption I will produce far less carbondioxide driving this kind of car for the rest of my life, compared to the 10000 Kg released while producing an average electric car. Not to mention wasted nature nor hazardous waste.
 
-Luckily, here in Finland electricity is produced minimally with fossil fuels. Thus riding electric car after having got hold of one is not a crime against climate. If electricity is produced mainly by fossil fuel, electric cars really should be banned on such countries.
+Luckily, here in Finland electricity is produced minimally with fossil fuels. And importing electricity from Russia is nowadays banned, I think. Thus riding electric car after having got hold of one is not a crime against climate here in Finland.  
+If electricity was produced to greater extent by fossil fuel, electric cars really should be banned on such countries.
 
-The car by the way was a BMW 116d F20, 2012. How on earth we managed to pack winter sports gear of 4 in that kind of a car. That's described in another article to come.
+The car by the way was a BMW 116d F20, 2012. How on earth we managed to pack winter sports gear of 4 in that kind of a car. That's described in article [The art of carpacking](http://localhost:4000/blog/2022/02/14/the-art-of-carpacking.html).
 
 
 
