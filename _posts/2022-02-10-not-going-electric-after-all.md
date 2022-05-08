@@ -15,12 +15,14 @@ Charging stations are very sparsely located. Those were with very few quick powe
 Charging stations are also pretty vulnerable. When you get to one eventually, it may turn up you won't even be able to charge your car. For this reason people have to make inquiries to charging station's providers to make sure that station is in tact. Especially for the stations that are located most deserted. Even in this case it sometimes has turned up station is malfunctioning even if it was reported to be ok. Not a pleasant feeling being prisoned in your car in -30 degrees. With battery running out in an hour. One is better to be equipped with warm clothes and with some heaters running with fossil fuels.
 Well, all that I was probably guessing beforehand, and planned renting a fully fossil car for those trips.
 
+Also the powergrid itself needs to get strengthened quite a lot if most transportation would get electrified.
+
 During cold (>-20 Celsius) periods, charging takes longer time. A lot of power is consumed to warm up the car interiors. These might bring problems even for the shorter distances then.
 
 Producing a new electric car is not sustainable at all.  
 Lots of carbondioxide is released during manufacturing process. To be more exact, amount of CO2 emission in manufacturing an electric car is somewhere in the class of 5 to 20 tons, depending on the size of the car and type of battery.
 Minerals and other raw materials, some of them very rare, are consumed in huge amounts. Specifically for battery minerals huge areas of untouched nature has been destroyed. Even whole lakes have been poisoned.  
-Of course new more sustainable battery techniques are being developed. But don't expect those to be available in any time soon.
+Of course new more sustainable battery techniques are being developed. But I wouldn't hold my breath for those.
 
 Even if electric car is not burning fossil fuel directly, preserving nature is fully dependent on how the electricity was produced. If it was by coal, gas or oil, electric car would be even a bigger threat to the climate than an ordinary car with combustion engine would be. Efficiency of producing electricity e.g. from coal is only 50-55%, you see.  
 Finland has been importing electricity from Russia. Who knows how it is produced there. Using coal in the worst case.  
