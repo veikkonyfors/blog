@@ -35,8 +35,17 @@
 
       <section>
         <div id="title">
-          <h1><a href="/blog/">{{ site.title | default: site.github.repository_name }}</a></h1>
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
+          <p id="link2blog"></p>
+          <script>
+          var node; node=document.getElementById("link2blog");
+          if(window.location.pathname != "/blog/") {
+    		node.innerHTML = '<a href="/blog/">Blog home</a>';
+    		node.style.visibility='visible'
+    		}
+          </script>
+
           <hr>
           <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
