@@ -30,3 +30,7 @@ $\implies \text{Unit of vacuum permittivity}=\frac{kgm^{3}}{s^{4}A^{2}}$
 $\implies \text{Unit of } \vec{E} \text{ :} \hspace{1em} \frac{kgm^{3}}{s^{4}A^{2}} \frac{As}{m^{2}}= \frac{kgm}{s^{3}A}$ 
 
 *Q* &nbsp; is the source charge constituting electric field $\vec{E}$, which induces electric force $\vec{F}$ affecting charge *q*&nbsp; put at the distance of *r*&nbsp; from the source charge *Q*.
+
+### 1st Maxwell equation - charges generate electric field
+$\nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0}, \hspace{1em} \text{or in integral form} \hspace{1em} 
+\oint_{S}\vec{E} \cdot \mathrm{d}a = \frac{Q}{\epsilon_0}$ 
