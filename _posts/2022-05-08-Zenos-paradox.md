@@ -17,7 +17,7 @@ Sounds reasonable, doesn't it? Eh, no! We know by experience rabbit would pass t
 
 Human mind has just become accustomed to classical mechanics way of thinking in this matter. In this case infinite series of ever decreasing distances converging to 100m. But in 'Newtonian math' newer actually reaching it.
 
-Quantum mechanics brings the relief. Planck's scale 6.62607015 × 10<sup>-34</sup> designates the smallest possibly perceptible distance. One can't divide that anymore to halves. This makes the trick. Rabbit passes tortoise at Planck's scale.  
+Quantum mechanics brings the relief. Planck's length 1.616255 × 10<sup>-35</sup> designates the smallest possibly perceptible distance. One can't divide that anymore to halves. This makes the trick. Rabbit passes tortoise at Planck's scale.  
 Not very intuitive in the end, after all. But so is quantum mechanics in various ways.
 
 Similar things come up in Relativity as well.  
