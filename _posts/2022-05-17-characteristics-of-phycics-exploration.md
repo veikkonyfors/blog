@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Characteristics of physics exploration"
-description: "How do phycic's postulates evolve"
+description: "Finding laws of nature resembles learning to play chess by watching"
 tag: Classical Physics
 ---
 
@@ -18,9 +18,10 @@ At some point of time writing was invented. Enabling documentation of things ear
 A good sample of essence of available time for progress in nature exploration is 'Annus Mirabilis' for Isaac Newton. The couple of years he had retreated to countryside to escape Great Plague in Cambridge. He had all the time to think of how the universe works. And that was what he did. In various areas like philosophy, optics and calculus.  
 One of important inventions he came up with was his laws of motion and gravity. Which he told he got inspiration for, while watching an apple fall from tree to ground. These laws became the heart of classical physics.
 
-Physics is probably the main field of science in finding out how the universe works. In what manners does the research in physics work then?
+Physics is probably the main field of science in finding out how the universe works. Physics is used in most other areas of science, like chemistry, biology, geology, even in psychology on the physiological area of it. Similarly as mathematics is used in physics.
 
-Physicists gather hints of the surroundings, perform experiments and deduce theories based on the notions by using their intuition. Sometimes they just have to make guesses on theories, based on minimal information. In either case more and more experiments need to be performed with more and more measurements to verify the theory.
+In what manners does the research in physics work then?  
+Physicists make observations, gather facts and hints of the surroundings, perform experiments and deduce theories based on the notions by using their intuition. Sometimes they just have to make guesses on theories, based on minimal information. In either case more and more experiments need to be performed with more and more measurements to verify the theory.
 
 Sometimes theories hold for long. As has e.g. Maxwell's theories on electromagnetics done up to date.  
 It wasn't that good with the Newton's classical mechanics. It turned out that they are almost right if we apply them in human scales of speed, time and others measures. Giving accurate enough results for everyday life. But beyond that, if we reach e.g. near to the speed of light, mass starts to increase, making Newton's laws go badly wrong.
