@@ -19,7 +19,8 @@ Computer centers are still one of the biggest consumers. But networking related 
 There certainly is a difference on how cost-effective different programming environments are energy wise.
 Cray at CSC was mostly programmed with Fortran and c. Even with CAL assembler. Those are nowadays regarded as most energy effective languages.
 
-With assemblers, Fortran and c languages programmer is working closer to grass-roots level. One have to code things that fit straight to the case in question. Whereas e.g. a Python programmer can use ready made sophisticated frameworks instead. Those frameworks has to adopt to different instances and thus have a lot of extra conditional coding among other things. Python has been said to use tens and tens of times more energy in performing the same tasks if compared to c. This means that required time is also longer in about the same proportion.
+With assemblers, Fortran and c languages programmer is working closer to grass-roots level. One have to code things that fit straight to the case in question. Whereas e.g. a Python programmer can use ready made sophisticated frameworks instead. Those frameworks has to adopt to different instances and thus have a lot of extra conditional coding among other things. Python is an interpreted language, which makes it run a bit slower if compared to compiled code.  
+Thus, Python has been said to use tens and tens of times more energy in performing the same tasks if compared to c. This means that required time is also longer in about the same proportion.
 
 Other side of the coin is of course that the programmer uses a lot less time to implement an algorithm in Python if compared in implementing it with c.  
 As man work has traditionally been regarded more valuable than energy, the trend has been towards tools that can produce results in shorter time.  
