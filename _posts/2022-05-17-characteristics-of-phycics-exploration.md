@@ -34,8 +34,8 @@ But we still wouldn't know why.
 Richard Feynman compared forming postulates of physics to learning the game of chess by watching aside.
 
 Somebody unfamiliar with chess game, starts watching two players play. Initially having no clue on chess rules. Little by little, along time, rules start to form up in spectator's mind. E.g. the rule that bishop is always moving diagonally. Thus a certain bishop must stay on a square of the same color throughout the game. Black or white.  
-After spectator had lost concentration for a while during a long game, one of the bishops, originally in white square, had moved to a black square.  
-How is this possible? Did either of the players cheat? No, chess players do not cheat. It was only that the rules formed in spectator's mind were just a bit short. In between a white bishop had been captured and later on a pawn crossed for queening got raised to a black bishop.
+After spectator had lost concentration for a while during a long game, one of the white bishops, originally in white square, had moved to a black square.  
+How is this possible? Did either of the players cheat? No, chess players do not cheat. It was only that the rules formed in spectator's mind were just a bit short. In between a white bishop had been captured and later on a pawn crossed for queening got raised to a white bishop on black square.
 
 That was just very much similar to what happened with Newton's laws. They looked perfect until Specific theory of Relativity turned up. Resulting in an enhanced rule; relativity factor to be taken into account.
 
