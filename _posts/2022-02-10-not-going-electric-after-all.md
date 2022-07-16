@@ -39,7 +39,7 @@ With this kind of consumption I will produce far less carbondioxide driving this
 Luckily, here in Finland electricity is produced minimally with fossil fuels. And importing electricity from Russia is nowadays banned, I think. Thus riding electric car after having got hold of one is not a crime against climate here in Finland.  
 If electricity was produced to greater extent by fossil fuel, electric cars really should be banned on such countries.
 
-The car by the way was a BMW 116d F20, 2012. How on earth we managed to pack winter sports gear of 4 in that kind of a car. That's described in article [The art of carpacking](http://localhost:4000/blog/2022/02/14/the-art-of-carpacking.html).
+The car by the way was a BMW 116d F20, 2012. How on earth we managed to pack winter sports gear of 4 in that kind of a car. That's described in article [The art of carpacking](https://veikkonyfors.github.io/blog/2022/02/14/the-art-of-carpacking.html).
 
 
 
