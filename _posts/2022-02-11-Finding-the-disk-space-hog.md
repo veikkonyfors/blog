@@ -38,14 +38,14 @@ IFS=$&apos;\n&apos;; for i in $(find . -type d); do cd $i;find . -maxdepth 1 -ty
 
 Sample below. Having a look on the first one revealed thousands of left over cached files from skype. Suspecting the second one is similar case from Chrome.
 
-Veeras-Air:~ pappa$ IFS=$'\n'; for i in $(find . -type d); do cd $i;find . -maxdepth 1 -type f -exec du {} \; | cut -f 1 -d' ' | perl -ne'$s=<>; while(<>) {$s+=$_;} chomp $s; print "$s "'; pwd; cd -; done  | grep ^[0-9] | sort -nr | head  
-709544 /Users/pappa/Library/Caches/com.skype.skype/fsCachedData  
-609384 /Users/pappa/Library/Caches/Google/Chrome/Default/Cache/Cache_Data  
-476600 /Users/pappa/Library/Application Support/Skype/live#3aveikkonyfors/media_messaging/emo_cache_v2  
-447328 /Users/pappa/Downloads  
-425272 /Users/pappa/Library/Application Support/Skype/veikkonyfors/media_messaging/emo_cache_v2  
-410456 /Users/pappa/Library/Caches/Google/Chrome/Default/Code Cache/js  
-97648 /Users/pappa/Library/Application Support/Google/Chrome/Default/Extensions/fahmaaghhglfmonjliepjlchgpgfmobi/1.399.2_2/polymer/miniplayer_polymer  
-97296 /Users/pappa/Library/Caches/com.apple.helpd/SDMHelpData/AppleExtra/English  
-94664 /Users/pappa/Library/Mail/V4/923DC53A-62A7-42CB-B119-1BEA8FAB7EBC/[Gmail].mbox/All Mail.mbox/01BC001E-D7A3-4209-9D21-24643F0B0B0E/Data/2/Messages91808 /Users/pappa/Library/Application Support/Google/Chrome/Default/Extensions/fahmaaghhglfmonjliepjlchgpgfmobi/1.399.2_2/polymer/miniplayer_polymer_v2  
-Veeras-Air:~ pappa$ 
+	Veeras-Air:~ pappa$ IFS=$'\n'; for i in $(find . -type d); do cd $i;find . -maxdepth 1 -type f -exec du {} \; | cut -f 1 -d' ' | perl -ne'$s=<>; while(<>) {$s+=$_;} chomp $s; print "$s "'; pwd; cd -; done  | grep ^[0-9] | sort -nr | head  
+	709544 /Users/pappa/Library/Caches/com.skype.skype/fsCachedData  
+	609384 /Users/pappa/Library/Caches/Google/Chrome/Default/Cache/Cache_Data  
+	476600 /Users/pappa/Library/Application Support/Skype/live#3aveikkonyfors/media_messaging/emo_cache_v2  
+	447328 /Users/pappa/Downloads  
+	425272 /Users/pappa/Library/Application Support/Skype/veikkonyfors/media_messaging/emo_cache_v2  
+	410456 /Users/pappa/Library/Caches/Google/Chrome/Default/Code Cache/js  
+	97648 /Users/pappa/Library/Application Support/Google/Chrome/Default/Extensions/fahmaaghhglfmonjliepjlchgpgfmobi/1.399.2_2/polymer/miniplayer_polymer  
+	97296 /Users/pappa/Library/Caches/com.apple.helpd/SDMHelpData/AppleExtra/English  
+	94664 /Users/pappa/Library/Mail/V4/923DC53A-62A7-42CB-B119-1BEA8FAB7EBC/[Gmail].mbox/All Mail.mbox/01BC001E-D7A3-4209-9D21-24643F0B0B0E/Data/2/Messages91808 /Users/pappa/Library/Application Support/Google/Chrome/Default/Extensions/fahmaaghhglfmonjliepjlchgpgfmobi/1.399.2_2/polymer/miniplayer_polymer_v2  
+	Veeras-Air:~ pappa$ 
