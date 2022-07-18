@@ -9,7 +9,7 @@ tag: Unix
 
 Even though disk space is pretty cheap at cloud services nowadays, some are interested to keep cloud storage clean of waste. Few are even trying to get along with the initial free chunk of storage as long as possible.  
 For people like that, I present a method to find out major disk space hogs in cloud. Handy for others as well, I would imagine.  
-Hogs tend to be directories which either contain a few large files or tons of smaller ones at base level (i.e. not including subdirectories). For me these tend to be directories containing e.g. pictures and short videos of summer holidays, which I tend to gather in their own folders.  
+Hogs tend to be directories which either contain a few large files or tons of smaller ones at base level (i.e. not including subdirectories). For me these mostly are directories containing e.g. pictures and short videos of summer holidays, which I am used to gather in their own folders.  
 
 Google Drive has currently initial 15GB of free storage, 100GB will be 1.99Eur/Month, 200GB 2.99Eur/Month and 2TB 9.99Eur/Month.  OneDrive and iCloud have similar plans. Among others.  
 Initially I will cover Google Drive, but will be back with others as time permits.
