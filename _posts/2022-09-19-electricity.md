@@ -21,14 +21,6 @@ Electric charge is denoted by letter Q.
 
 $1C = \frac{e}{1.60217653\cdot10^{-19}} \hspace{1em} \hspace{1em} i.e. \hspace{1em} 1C \sim 6.242\cdot 10^{18}e$
 
-### Electric current
-Electric current is created by moving electric charges.  
-When electric charge is moving in a metallic wire, electric charges in question are electrons, which are loose on metal atoms's outer shells.
-Electric current can also exist e.g. in salty liquids, where there is salt ions available.  
-Electric current is measured by amperes (amps, A): One Coulomb of elementary charges in a second.
-
-$1A=1\frac{C}{s}, \implies C=As$
-
 ### Electric force
 When you have two electric charges , Q and q, nearby each other, they will have a force affecting between them. Opposite charges have attractive force between them, like charges repel each other. Let's say charges are at distance r, in which case the force between them is characterized by formula
 
@@ -53,5 +45,15 @@ $\text{Unit of vacuum permittivity}=\frac{s^{4}A^{2}}{kgm^{3}}$
 $\implies \text{Unit of } \vec{E} \text{ :} \hspace{1em} \frac{kgm^{3}}{s^{4}A^{2}} \frac{As}{m}= \frac{kgm^2}{s^{3}A}=
 \frac{kgm^2}{s^{3}\frac{C}{s}} = \frac{kgm^2}{s^{2}\cdot C} = \frac{N}{C}$ 
 
+### Electric current
+Electric field makes electric charges to move in it. Moving electric electric charges create an electric current in turn.  
+Electric current is measured by amperes (amps, A): One Coulomb of elementary charges in a second.
+
+$1A=1\frac{C}{s}, \implies C=As$
+
+On a metallic wire, an electric field is created within it when its ends are connected to a power supply. This make loosely connected electrons on outer shell of the metal to start moving in the field.  
+
+Moving electric charge can also be bigger entities, like [ions](../../../2022/09/20/ions.html). If table salt, $Na^+Cl^-$ is dissolved in water, Na^+ and Cl- ions get separated due to water molecules dipole effect. Once an electric field is generated in this liquid, ions start to travel along the field.
+ 
 
 
