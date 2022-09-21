@@ -55,7 +55,7 @@ On a metallic wire, an electric field is created within it when its ends are con
 
 Moving electric charges can also be bigger entities, like [ions](../../../2022/09/20/ions.html). If table salt, $Na^+ Cl^-$ is dissolved in water, $Na^+$ and $Cl-$ ions get separated due to water molecules dipole effect. Once an electric field is generated in this liquid, ions start to travel along the field.
  
-### Electric potential in homogeneous electric field
+### Electric potential in [homogeneous](#Potential-in-homogeneous-electric-field "electric force is the same in every point of field") electric field
 When and electron moves in a homogeneous electric field a distance of $\Delta x$, electric force makes a work of  
 $W=\vec{F}\Delta x$, by which amount potential energy is also changed.  
 As $\vec{F}=\vec{E}q$, potential energy of the electron is $W=E_p=\vec{E}e\Delta x$ when compared to electron's starting point.  
@@ -65,11 +65,20 @@ Objects mass $m$ relates to electric charge $e$, $h$ relates to $\Delta x$ and a
 
 ### Potential of electric field
 To get potential for electric field itself, we devide field $\vec{E}$ by the charge $Q$. Thus we get a general feature describing the field itself, independently from the charge in question.  
-We mark electric field potential by $V$. It's unit is $\frac{J}{C}=\frac{\frac{kg\cdot m}{s^2}}{As}$
+We mark electric field potential by $V$.  
+It's unit is Volt, also marked $V=\frac{J}{C}=\frac{N\cdot m}{As}=\frac{\frac{kg\cdot m^2}{s^2}}{As}
+=\frac{kg\cdot m^2}{As^3}$
 
 $V=\frac{\vec{E_p}}{Q}$
 
 ### Potential in homogeneous electric field
-In a homogeneous electric field potential energy for an electron was $E_p=\vec{E}e\Delta x$.  
+In a homogeneous electric field potential energy for an electron was $E_p=\vec{E}e\Delta x$.
+
 As potential in general electric field for an electron is $V=\frac{\vec{E_p}}{e}$,  
 we get $V=\frac{\vec{E}e\Delta x}{e}=\vec{E}\Delta x$
+
+Thus unit of electric field's strength can also be expressed as
+
+$[E]=\frac{V}{m}=\frac{\frac{J}{C}}{m}=\frac{N\cdot m}{As\cdot m}=\frac{N}{C}$
+
+Note: Electric field in metallic conductor is homogeneous.
