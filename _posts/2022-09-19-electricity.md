@@ -36,7 +36,7 @@ Electric field is an area, where there is force effecting on an electric charge 
 An electric charge creates an electric field around it.  
 Strength of the electric field at each  point is defined to be the force effecting a charge Q at that point divided by Q itself:  
 
-$\vec{E}=\frac{\vec{F}}{q}=\frac{1}{4\pi\epsilon_{0}} \frac{Q}{r^{2}}$
+$\vec{E}=\frac{\vec{F}}{q}=\frac{1}{4\pi\epsilon_{0}} \frac{Q}{r^{2}}$ (note Coulomb's law for the latter)
 
 *Q* &nbsp; is the source charge constituting electric field $\vec{E}$, which induces electric force $\vec{F}$ affecting charge *q*&nbsp; put at the distance of *r*&nbsp; from the source charge *Q*.
 
@@ -55,8 +55,8 @@ On a metallic wire, an electric field is created within it when its ends are con
 
 Moving electric charges can also be bigger entities, like [ions](../../../2022/09/20/ions.html). If table salt, $Na^+ Cl^-$ is dissolved in water, $Na^+$ and $Cl-$ ions get separated due to water molecules dipole effect. Once an electric field is generated in this liquid, ions start to travel along the field.
  
-### Electric potential
-When and electron moves in electric field a distance of $\Delta x$, electric force makes a work of  
+### Electric potential in homogeneous electric field
+When and electron moves in a homogeneous electric field a distance of $\Delta x$, electric force makes a work of  
 $W=\vec{F}\Delta x$, by which amount potential energy is also changed.  
 As $\vec{F}=\vec{E}q$, potential energy of the electron is $W=E_p=\vec{E}e\Delta x$ when compared to electron's starting point.  
 
@@ -64,7 +64,12 @@ It is interesting how this correlates with gravitational potential energy $E_g=m
 Objects mass $m$ relates to electric charge $e$, $h$ relates to $\Delta x$ and acceleration of gravity $g$ relates to $\vec{E}$. Only that $g$ is a simplified constant derived empirically to fit exactly gravitational field $\vec{g}$ on earth's surface.
 
 ### Potential of electric field
-When an electron moves in electric field, it's potential energy gets changed, as described above. To get potential for the elecric field, we devide field $\vec{E}$ by the charge $Q$. Thus we get a general feature describing the field itself, independently from the charge in question.  
+To get potential for electric field itself, we devide field $\vec{E}$ by the charge $Q$. Thus we get a general feature describing the field itself, independently from the charge in question.  
 We mark electric field potential by $V$. It's unit is $\frac{J}{C}=\frac{\frac{kg\cdot m}{s^2}}{As}$
 
 $V=\frac{\vec{E_p}}{Q}$
+
+### Potential in homogeneous electric field
+In a homogeneous electric field potential energy for an electron was $E_p=\vec{E}e\Delta x$.  
+As potential in general electric field for an electron is $V=\frac{\vec{E_p}}{e}$,  
+we get $V=\frac{\vec{E}e\Delta x}{e}=\vec{E}\Delta x$
