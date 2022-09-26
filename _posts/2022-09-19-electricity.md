@@ -9,9 +9,7 @@ katex: true
 ## Electricity
 
 In order to be able to proceed acquainting on quantum mechanics and general relativity, it became evident one needs to be somewhat familiar with electromagnetism. Actually quite a lot.
-That was my intuition from the beginning, but now it has turned out to be a necessity to carry on. Thus, now familiarizing with electromagnetism as well. Starting this journey with wrapping up main points in electricity.  
-
-
+That was my intuition from the beginning, but now it has turned out to be a necessity to carry on. Thus, now familiarizing with electromagnetism as well. Starting this journey with wrapping up some of the main points in electricity.  
 
 ### Electric charge
 If an object has more electrons than protons, object's charge is said to be negative. Positive if vice versa. Neutral otherwise.  
@@ -51,7 +49,7 @@ Electric current is measured by amperes (amps, A): One Coulomb of elementary cha
 
 $1A=1\frac{C}{s}, \implies C=As$
 
-On a metallic wire, an electric field is created within it when its ends are connected to a power supply. This make loosely connected electrons on outer shell of the metal to start moving in the field.  
+On a metallic wire, an electric field is created within it when it's ends are connected to a power supply. This makes loosely connected electrons on outer shell of the metal to start moving in the field.  
 
 Moving electric charges can also be bigger entities, like [ions](../../../2022/09/20/ions.html). If table salt, $Na^+ Cl^-$ is dissolved in water, $Na^+$ and $Cl-$ ions get separated due to water molecules dipole effect. Once an electric field is generated in this liquid, ions start to travel along the field.
  
