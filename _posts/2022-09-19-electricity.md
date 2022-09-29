@@ -31,8 +31,9 @@ $F=farad \sim \frac{s^{4}A^{2}}{kgm^{2}} $
 
 
 ### Electric Field
-Electric field is an area, where there is force effecting on an electric charge at each of it's points.  
-An electric charge creates an electric field around it.  
+An electric charge (Q_1) creates an electric field around it.
+If another electric charge (Q_2) is put in this field, at any point of it, there is force affecting this charge. This force is described by Coulomb's law.
+  
 Strength of the electric field at each  point is defined to be the force effecting a charge Q at that point divided by Q itself:  
 
 $\vec{E}=\frac{\vec{F}}{q}=\frac{1}{4\pi\epsilon_{0}} \frac{Q}{r^{2}}$ (note Coulomb's law for the latter)
