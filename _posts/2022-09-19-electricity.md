@@ -55,7 +55,7 @@ On a metallic wire, an electric field is created within it when it's ends are co
 
 Moving electric charges can also be bigger entities, like [ions](../../../2022/09/20/ions.html). If table salt, $Na^+ Cl^-$ is dissolved in water, $Na^+$ and $Cl-$ ions get separated due to water molecules dipole effect. Once an electric field is generated in this liquid, ions start to travel along the field.
  
-### Electric potential in [homogeneous](#Potential-in-homogeneous-electric-field "electric force is the same in every point of field") electric field
+### Electric potential in [homogeneous](#potential-in-homogeneous-electric-field "electric force is the same in every point of field") electric field
 When and electron moves in a homogeneous electric field a distance of $\Delta x$, electric force makes a work of  
 $W=\vec{F}\Delta x$, by which amount potential energy is also changed.  
 As $\vec{F}=\vec{E}q$, potential energy of the electron is $W=E_p=\vec{E}e\Delta x$ when compared to electron's starting point.  
