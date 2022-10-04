@@ -23,9 +23,12 @@ katex: true
 |"|"|"|[W Boson]( "Weak nuclear force carrier")|
 |"|"|"|[Z Boson]( "Weak nuclear force carrier")|
 |"|"|[Scalar]( "Zero spin")|Higgs|
-|[Composite]( "Composed of quarks")|[Hadron]( "Two or more quarks")|[Baryon]( "Odd number of quarks")|
-|"|"|[Meson]( "2 quarks")
+|[Composite]( "Composed of quarks")|[Hadron]( "Two or more quarks")|[Baryon]( "Odd number of quarks")|Proton|
+|"|"|"|Neutron|
+|"|"|[Meson]( "2 quarks")|Pion|
+|"|"|"|Rho|
 
+$\pi^+, \pi^- or \pi^0$
 
 ## Quarks
 
@@ -46,21 +49,19 @@ katex: true
 |**Spin**|$\frac{1}{2}$|$\frac{1}{2}$|$\frac{1}{2}$|
 |**Mass**|$0.511 \frac{MeV}{c^2}$|$0.511 \frac{MeV}{c^2}$|$105.7 \frac{MeV}{c^2}$|
 
-## Gauge particles
-
-||**Photon**|**Gluon**|**W & Z bosons**|
-|**Carrier for**|Electromagnetic|Strong nuclear|Weak nuclear|
-
-
-# Composite particles
-
-## Hadrons
+## Baryons
 
 | |**Proton**|**Neutron**|
 |**Charge**|+$e$|0|
 |**Spin**|$\frac{1}{2}$|$\frac{1}{2}$|
 |**Mass**|$938 \frac{MeV}{c^2}$|$0.5 \frac{MeV}{c^2}$|
 |**Quarks**|UUD|DDU||
+
+## Mesons
+
+| |**Pion**|**Rho**|
+||$\pi^+, \pi^- \hspace{1em} or \hspace{1em} \pi^0$|$\rho^+, \rho^- \hspace{1em} or \hspace{1em} \rho^0$|
+
 
 ## Vocalbulary
 
