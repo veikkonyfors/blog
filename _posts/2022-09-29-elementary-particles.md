@@ -73,7 +73,7 @@ Color quantum state is needed, as some hadrons, e.g. $\Delta^{++}$, consist of q
 
 #### Electronvolt
 
-Unit of energy required to have an electron moves through a voltage difference of 1V in an electric field. $1eV=1.602\cdot 10^{-19}J 
+Unit of energy required to have an electron moves through a voltage difference of 1V in an electric field. $1eV=1.602\cdot 10^{-19}J \hspace{1em}(\frac{kgm^2}{s^2})$
 #### QCD
 
 Quantumm chromodynamics, describes strong nuclear force.  
