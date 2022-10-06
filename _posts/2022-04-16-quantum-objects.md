@@ -12,14 +12,14 @@ Quantum objects obey rules of quantum mechanics. Most notably their properties a
 Actually, it is that the quantization is distinquishable only in Planck's scale objects. For larger objects things get somehow averaged to follow the rules of classical Newtonian physics. We just don't quite understand it yet why this is as it is. Or maybe I just am not aware of it.
 
 Photons, electrons, atoms and even molecules up to certain size are typical samples of quantum objects, per current understanding.  
-Quantum object may have various measurable quantum properties, called also as quantum numbers, like position, momentum, angular momentum, energy and spin. Below a couple of samples.
+Quantum object may have various measurable quantum properties, degrees of freedom, like position, momentum, angular momentum, energy and spin. Below a couple of samples.
 
 - Photon
   - polarization ~ spin
   - x-y-z location
   - time
   
-- Electron
+- Electron -
   - Principal quantum number, $n$. Energy level or  shell/orbital electron is in an atom.
   - Azimuthal quantum number, $l$. Orbital angular momentum, shape of the orbital, a.k.a. sub-shell. Values 0 - $n$-1.
   - Magnetic quantum number, $m_l$. Values $-l\hspace{1em} to \hspace{1em} +l$, including 0.
@@ -30,11 +30,6 @@ Quantum object may have various measurable quantum properties, called also as qu
   	- 18 on $n=3$ 
   	- etc
   
-Normally only one property/state is dealt with in one test. It would get too complicated otherwise.   
-
-Above objects and measurables are actually ones we have so far mostly been dealing with. Those that we have somewhat been able make out. I can imagine there's lots of objects and properties to be discovered, we haven't just been able to comprehend those yet with our limited understanding.
-
-It was mentioned above, that normally only one property is measured as otherwise things get complicated. One such complication is Heisenberg's uncertainty principle: it is not possible to simultaneously measure accurately two or more associated properties. Like position and velocity. The more precisely other one is measured, the more blurry it gets with the other one.
 
 
 
