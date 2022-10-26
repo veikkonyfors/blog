@@ -41,6 +41,11 @@ If electricity was produced to greater extent by fossil fuel, electric cars real
 
 The car by the way was a BMW 116d F20, 2012. How on earth we managed to pack winter sports gear of 4 in that kind of a car. That's described in article [The art of carpacking](https://veikkonyfors.github.io/blog/2022/02/14/the-art-of-carpacking.html).
 
+20221026, a note:
+Price of electricity at k-lataus is 35c/kWh currently. An ordinary electric car consumes about 30kWh per 100 km. Ending up on cost of approximately 10e/100km.
+With my BMW current costs are 4*2.22e/100km.
+I.e. about the same.
+
 
 
 
