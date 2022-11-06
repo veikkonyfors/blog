@@ -1,12 +1,12 @@
 ---
 layout: default
-title:  "Kotlin in Android, for dummies"
+title:  "Kotlin in Android, for a dummy"
 description: "Android development in Kotlin - a laymans view"
 tag: Kotlin
 katex: true
 ---
 
-# Kotlin in Android, for dummies
+# Kotlin in Android, for a dummy
 
 Started to develop a mobile app for Android, named [petrol](https://github.com/veikkonyfors/petrol "Petrol price tracking"). 
  
