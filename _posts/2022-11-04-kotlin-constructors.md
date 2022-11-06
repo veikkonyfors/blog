@@ -17,7 +17,7 @@ One can construct a class using constructor keyword. Like below
 	class MotorBike constructor(val make: String, val model: String, val displacement:Int, var miles)
 	{ /*...*/ }
 	
-One can leave the constructor keyword away, if there is no additional specifiers for it, i.e. it would simply be
+One can leave the constructor keyword away, if there is no additional specifiers for the class, i.e. it would simply be
 
 	class MotorBike (val make: String, val model: String, val displacement:Int, var miles:Int)
 	{ /*...*/ }
