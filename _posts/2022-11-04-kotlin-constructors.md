@@ -28,14 +28,16 @@ If the class has some additional specifications, like annotations, constructor k
 
 Properties can also be specified in the body block. One can even mix up these two means; some properties specified in header between parenthesis and some in the body block. Like in the below working sample:
 
-	// All four properties specified on primary constructor line, miles even with a default value
+	// All four properties specified on primary constructor line, 
+	//miles even with a default value
 	class MotorBike1(val make:String, val model:String?, val displacement:Int, var miles:Int=10)
 	{
 	
 	}	
 	
-	// Three first properties specified on constructor line, fourth item, _miles, without var keyword, is a
-	//parameter used to initialize the property, miles, which is specified in the body.
+	// Three first properties specified on constructor line, fourth item, 
+	// _miles, without var keyword, is a parameter used to initialize the property, miles, 
+	// which is specified in the body.
 	class MotorBike2(val make:String, _model:String, _displacement:Int, _miles:Int)
 		{
 	        val model:String
@@ -65,7 +67,7 @@ SuzukiDr80080010
 Suzuki Dr750 750 100
 
 Per the experience so far, I am going to stick on the primary constructor method in simpler cases.
-When some more functionality is required for some of the properties, like getters or initializers, I will specify all the properties in body.
+When some more functionality is required for some of the properties, like custom getters or setters, or initializers, I will specify all the properties in body.
 
 
 ## Secondary constructors
