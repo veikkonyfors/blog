@@ -10,6 +10,8 @@ katex: true
 As a C++ or Java developer, constructing a class wasn't a burden, as far as I can recall it.  
 In Kotlin, though, there seems to be so many various ways in setting up a class. I was a bit confused to start with. But in the end one just has to pick up one's preferred way of constructing a class, best suiting to case in hand.
 
+Here's what I have come up to from all the possibilities.
+
 ## Primary constructor
 
 Most concise way to construct a class is with primary constructor. Like below
@@ -66,12 +68,38 @@ Per the experience so far, I am going to stick on the primary constructor method
 When some more functionality is required for some of the properties, like getters or initializers, I will specify all the properties in body.
 
 
-
 ## Secondary constructors
 
-## Additional properties
+A class can have one or more secondary constructors on top of primary one, or even without one.
+Secondary constructors are not that commonly used, mostly they will be utilized with inheritance. But I could imagine there is some use cases for those even with non-inherited classes.
 
-## Initializers
+Below sample illustrates use of a secondary constructor together with a primary one, without inheritance. Point with secondary constructors might be one can use constructors with different number of parameters, leaving the unspecified properties to rely on their default values.
 
+	// class MotorBike3 has one primary constructor with property make alone
+	// Properties model, displacement and miles are specified in body, with default values.
+	// With the secondary constructor one can instantiate the class with all, the properties given.
+	class MotorBike3(val make:String)
+	{
+		var model:String="N/A"
+		get()=field+" "	// In order to be able to specify a custom getter, property needs to be in the block
+		var displacement:Int=-1
+		var miles:Int=-1
+		constructor(_make:String, _model:String, _displacement:Int, _miles:Int=10) : this(_make) {
+			model=_model
+			displacement=_displacement
+			miles=_miles
+		}
+	}	
+	
+	fun main() {
+		MotorBike3("Suzuki").also{println(it.make+" "+it.model+ it.displacement+" "+ it.miles)}
+		MotorBike3("Suzuki","Dr650",650).also{println(it.make+" "+it.model+ it.displacement+" "+ it.miles)}
+		MotorBike3("Suzuki","Dr650",650,43800).also{println(it.make+" "+it.model+ it.displacement+" "+ it.miles)}
+	}
+
+Output:  
+Suzuki N/A -1 -1   
+Suzuki Dr650 650 10  
+Suzuki Dr650 650 43800  
 
 
