@@ -2,7 +2,7 @@
 layout: default
 title:  "Kotlin in Android, for a dummy"
 description: "Android development in Kotlin - a laymans view"
-tag: Kotlin
+tag: Android & Kotlin
 katex: true
 ---
 
