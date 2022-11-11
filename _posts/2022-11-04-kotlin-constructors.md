@@ -2,7 +2,7 @@
 layout: default
 title:  "Kotlin constructors"
 description: "Constructing classes in Kotlin in various ways"
-tag: Kotlin
+tag: Android & Kotlin
 katex: true
 ---
 # Kotlin constructors
