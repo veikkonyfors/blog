@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Ssh vs Githubbi token with Android Studio and Eclipse"
+title:  "Ssh vs GitHub token with Android Studio and Eclipse"
 description: "Accessing GitHub with Android Studio and Eclipse, using personal access token or ssh"
 tag: Android & Kotlin
 katex: true
