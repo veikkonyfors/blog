@@ -19,11 +19,7 @@ But I'll document also token switching to some degree in the end.
 
 ### Setting up ssh key pair
 
-In order to use ssh protocol to connect to GitHub, you must have configured ssh at your workstation and at Github. Instructions to do that at   
-
-	https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent  
-	
-are pretty intuitive. Please follow them.  
+In order to use ssh protocol to connect to GitHub, you must have configured ssh at your workstation and at Github. Instructions to do that at [GitHub: connecting-to-github-with-ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) are pretty intuitive. Please follow them.  
 
 You can test ssh is working properly as follows:  
 
