@@ -21,7 +21,7 @@ One can compose custom getters and setters if one wishes to do so, though. E.g. 
 			 var miles:Int
 			 . . .
 
-Full code is available at [../../../kotlin-constructors.html]("Kotlin constructors" Kotlin constructor article).
+Full code is available at [Kotlin constructor article]("Kotlin constructors" ../../../kotlin-constructors.html).
 
 
 
