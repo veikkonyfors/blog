@@ -67,7 +67,7 @@ SuzukiDr80080010
 Suzuki Dr750 750 100
 
 Per the experience so far, I am going to stick on the primary constructor method in simpler cases.
-When some more functionality is required for some of the properties, like [custom getters or setters]("Kotlin getters and setters" ../../../getters-setters.html), or initializers, I will specify those properties in body.
+When some more functionality is required for some of the properties, like [custom getters or setters]("Kotlin getters and setters" ../../../../../2022/11/06/getters-setters.html), or initializers, I will specify those properties in body.
 
 
 ## Secondary constructors
