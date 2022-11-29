@@ -12,7 +12,7 @@ Think of a person in a space ship, traveling 0.95c away from earth. Person has t
 But what about the friend on earth, who is able to see all this in some mysterious way. One photon fires from the source in the midst of the ship towards back, traveling with speed of light. What on earth! When the photon reaches the back clock, it had already traveled a bit forwards towards the photon, as the space ship was traveling with speed of 0.95c. And even worse, the same goes on with the clock in the front. Only that it was moving away from the photon. Back clock blinks ahead of the front clock. Photon traveling backwards had a shorter way to go than the one heading forwards. They appear not to be in sync, when looked from earth.  
 So, if a something happens simultaneously at two spots, in perspective of somebody being stable with those spots, events anyhow
 appear to take place at different times for someone moving at some speed relative to the first person.  
-In above scenario, the person on earth observes the photon reaching back clock and photon reaching front clock at different times, even if the person in the ship experience those events taking place simultaneously.  
+In the above, person on earth observes the photon reaching back clock and photon reaching front clock at different times, even if the person in the ship experience those events taking place simultaneously.  
 Time difference between the photon hitting the back clock and photon hitting the front clock for the person on earth, assuming ship is 50m in length, would be  
 
 $$δt=\frac{\frac{0.9c*50m}{c^2}}{\sqrt{1-\frac{(0.9c)^2}{c^2}}}=
@@ -24,6 +24,8 @@ $$
 
 Not a lot, but still a difference.
 
+In this scenario, spaceship was traveling at constant speed. 
+What happens, if the rocket is accelerating instead of running in steady velocity. That is found out in article [Principle of Equality]( ../../../2022/11/29/principle-of-equality)
 
 
 
