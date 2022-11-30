@@ -32,10 +32,10 @@ $
 $\delta f=\frac{9.81\frac{m}{s^2}*33m}{(299792458 \frac{m}{s})^2} * f_0 \sim 3.6 * 10^{-15} * f_0
 $
 
-I.e. upper clock would advance one second in 3.6*10^15 seconds, in about 4 hundred million years.  
+I.e. upper clock would advance one second in $\frac{10^{15}}{3.6}$ seconds, in about 9 million years.  
 No human would notice ;-)
 
-
+If clocks were separated vertically by 1 km near the surface of Earth, the higher clock emits about three more second-ticks than the lower one in a million years. 
 
 
 
