@@ -18,7 +18,7 @@ Take a guess in which ship this took place? The one accelerating or the one on t
 Looking at the accelerating space ship, the ship had accelerated it's speed a bit in between absorber receiving the first and second photon, and thus the distance to travel for the second photon was a bit shorter.
 
 What about the ship on the ground then?  
-Nowadays there is precision clocks available that can measure time is running faster on a table than on floor.  
+Nowadays there is available precision clocks, e.g. optical Al⁺ clocks, that can measure time is running faster on a table than on floor.  
 If the space ship was sitting on the ground, such a precision clock certainly will show a difference in rates of clocks high up and down on the floor.
 Right in accordance to equality principle. 
 
@@ -32,7 +32,7 @@ $
 $\delta f=\frac{9.81\frac{m}{s^2}*33m}{(299792458 \frac{m}{s})^2} * f_0 \sim 3.6 * 10^{-15} * f_0
 $
 
-I.e. upper clock would advance one second in $\frac{10^{15}}{3.6}$ seconds, in about 9 million years.  
+I.e. upper clock would advance one second in $\frac{10^{15}}{3.6}$ seconds, about 9 million years.  
 No human would notice ;-)
 
 If clocks were separated vertically by 1 km near the surface of Earth, the higher clock emits about three more second-ticks than the lower one in a million years. 
