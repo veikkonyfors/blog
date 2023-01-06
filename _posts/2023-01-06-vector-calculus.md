@@ -2,7 +2,7 @@
 layout: default
 title:  "Vector Calculus"
 description: "Refresh of Vector Operations"
-tag: Mathematics
+tag: Vector Calculus
 katex: true
 ---
 
