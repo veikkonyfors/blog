@@ -6,7 +6,7 @@ tag: Unix
 ---
 
 Turned out I knew very little of git, even if I have used it for years.
-Trying to clarify basic matters here below, for myself mainly.But why not for other dummies as well. ;-)
+Trying to clarify basic matters here below, for myself mainly. But why not for other dummies as well. ;-)
 
 - [Storage hierarchy](#storage-hierarchy)
 	- [Local working copy](#local-working-copy)	
@@ -20,6 +20,9 @@ Trying to clarify basic matters here below, for myself mainly.But why not for ot
 	- [Differing lines](#differing-lines)	
 	- [Moving files between storage levels](#moving-files-between-storage-levels)
 	- [Status of repository](#status-of-repository)
+		- [Overall status](#overall-status)
+		- [Remote vs local status](#remote-vs-local-status)
+	- ### Mods in remote not available locally yet
 
 # Storage hierarchy
 
@@ -127,7 +130,7 @@ Unstage the mod: **git restore**
 
 ## Status of repository
 
-### Overall status locally
+### Overall status
 **git status**
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git status
@@ -159,7 +162,9 @@ If one wants to
 - stage working copy overriding the previous staged one -> git add bikes.txt
 - replace working copy with staged one -> git restore bikes.txt
 
-### Mods in remote not availablelocally yet
+### Remote vs local status
+During the previous **git status**, we actually had a mod in remote repository of which the local repo was unaware of. To make local repo aware of remote changes, one has to issue **git fetch**.  
+Afterwards the status shows we also have one remote change to be applied locally, if we so wish.
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git fetch
 	remote: Enumerating objects: 5, done.
@@ -188,7 +193,202 @@ If one wants to
 		modified:   bikes.txt
 	
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+	
+In this situation, if we try to push out local repo to remote, we encounter a problem:
 
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git push
+	To ssh://github.com/veikkonyfors/gitest
+	 ! [rejected]        main -> main (non-fast-forward)
+	error: failed to push some refs to 'ssh://git@github.com/veikkonyfors/gitest'
+	hint: Updates were rejected because the tip of your current branch is behind
+	hint: its remote counterpart. Integrate the remote changes (e.g.
+	hint: 'git pull ...') before pushing again.
+	hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+	
+	Even pull doesn't work:
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git pull
+	error: Your local changes to the following files would be overwritten by merge:
+		bikes.txt
+	Please commit your changes or stash them before you merge.
+	Aborting
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
+	
+Lets commit first as suggested, with some preliminary steps:
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git add bikes.txt
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff --staged
+	diff --git a/bikes.txt b/bikes.txt
+	index db578de..3f66725 100644
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@ -1,2 +1,9 @@
+	-T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, GSX750, 
+	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125
+	+T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	+KTM Duke 170
+	+kukkuu
+	+miu
+	+mau
+	+iihahaa
+	+ammuu
+	+hau
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git commit
+	[main b155cee] Pre merge
+	 1 file changed, 9 insertions(+), 2 deletions(-)
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+	
+Now let's see what was the difference between local and remote:
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
+	diff --git a/bikes.txt b/bikes.txt
+	index ae7602e..3f66725 100644
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@ -1,2 +1,9 @@
+	-T250, GT550,  -->TSR125<--, DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, GSX750, 
+	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000
+	+T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	+KTM Duke 170
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+
+There was the TSR125 added on the remote, which was not locally available.
+Thus I don't want to pull/merge to override with the remote copy.
+
+Pushing local to remote won't work:
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git push
+	To ssh://github.com/veikkonyfors/gitest
+	 ! [rejected]        main -> main (non-fast-forward)
+	error: failed to push some refs to 'ssh://git@github.com/veikkonyfors/gitest'
+	hint: Updates were rejected because the tip of your current branch is behind
+	hint: its remote counterpart. Integrate the remote changes (e.g.
+	hint: 'git pull ...') before pushing again.
+	hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+	
+One has to pull the remote first and then incoporate the local changes, then add, commit and push:
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git pull
+	Auto-merging bikes.txt
+	CONFLICT (content): Merge conflict in bikes.txt
+	Automatic merge failed; fix conflicts and then commit the result.
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+
+Try merge
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git merge
+	error: Merging is not possible because you have unmerged files.
+	hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+	hint: as appropriate to mark resolution and make a commit.
+	fatal: Exiting because of an unresolved conflict.
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git pull
+	error: Pulling is not possible because you have unmerged files.
+	hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+	hint: as appropriate to mark resolution and make a commit.
+	fatal: Exiting because of an unresolved conflict.
+	
+Well, the pull changed it, see what we have now
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
+	diff --cc bikes.txt
+	index cb72779,ae7602e..0000000
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@@ -1,9 -1,2 +1,14 @@@
+	++<<<<<<< HEAD
+	 +T250, GT550,  TSR125, DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	 +FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	 +KTM Duke 170
+	 +kukkuu
+	 +miu
+	 +mau
+	 +iihahaa
+	 +ammuu
+	 +hau
+	++=======
+	+ T250, GT550,  TSR125, DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, GSX750, 
+	+ FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000
+	++>>>>>>> 197b2912fba9c41a1f716a7d21ea33c38bb41c36
+	
+Let's do what was suggested, add + commit
+	
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git add
+	Nothing specified, nothing added.
+	Maybe you wanted to say 'git add .'?
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git add bikes.txt 
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git merge
+	fatal: You have not concluded your merge (MERGE_HEAD exists).
+	Please, commit your changes before you merge.
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git commit
+	[main ec60227] Merge branch 'main' of ssh://github.com/veikkonyfors/gitest into main
+	
+And then merge?
+	
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git merge
+	Already up to date.
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
+	
+Ahaa, merge combined local and remote to working copy. Now we just have to edit it how we wan't it to be. Then add, commit & push
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ cat bikes.txt
+	<<<<<<< HEAD
+	T250, GT550,  TSR125, DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	KTM Duke 170
+	kukkuu
+	miu
+	mau
+	iihahaa
+	ammuu
+	hau
+	=======
+	T250, GT550,  TSR125, DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, GSX750, 
+	FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000
+	>>>>>>> 197b2912fba9c41a1f716a7d21ea33c38bb41c36
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
+	
+After editing
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ cat bikes.txt
+	T250, GT550,  TSR125, DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	KTM Duke 170
+
+Add, commit and push
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git add bikes.txt
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git commit
+	[main ddb7198] Edited merge
+	 1 file changed, 1 insertion(+), 11 deletions(-)
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git push
+	Enumerating objects: 22, done.
+	Counting objects: 100% (22/22), done.
+	Delta compression using up to 4 threads
+	Compressing objects: 100% (18/18), done.
+	Writing objects: 100% (18/18), 1.72 KiB | 1.72 MiB/s, done.
+	Total 18 (delta 11), reused 0 (delta 0)
+	remote: Resolving deltas: 100% (11/11), completed with 2 local objects.
+	To ssh://github.com/veikkonyfors/gitest
+	   197b291..ddb7198  main -> main
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+
+Local and remote now the same
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
+
+And as we wish it to be
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ cat bikes.txt
+	T250, GT550,  TSR125, DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	KTM Duke 170
+
+pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
 
 ### Find out staged files
 **git diff --staged** 
