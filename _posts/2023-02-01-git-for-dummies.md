@@ -58,10 +58,13 @@ I mysel am using GitHub hosted services, but there a numerous alternatives for i
 Below some common git commands to find out information on the state of repository.  
 Commands are issued at the project repository directory, where the .git subdirectory lies.
 
-## Differing lines
-Use **git diff** command in it's various variations
+## Finding out Difference between working copy, local repo and remote repo
 
-### Between working copy and local repository
+Differences can be found between adjacent storage levels.
+To get differences over adjacent levels, on has to do it level by level.
+
+### Differences between working copy and local repository
+**git diff**
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
 	diff --git a/bikes.txt b/bikes.txt
@@ -76,8 +79,20 @@ Use **git diff** command in it's various variations
 	
 Staged files are considered as being already in the local repo, no diffs listed.
 
+### Differences between staging area and local repository
+**git diff --staged**
 
-### Between local repository and remote repository
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff --staged
+	diff --git a/bikes.txt b/bikes.txt
+	index 16d38c8..db578de 100644
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@ -1,2 +1,2 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, GSX750, 
+	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000
+	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL100
+	
+### Differences between local repository and remote repository
 **git diff \<remote_branch_name\>..\<local_branch_name\>**
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
@@ -91,12 +106,22 @@ Staged files are considered as being already in the local repo, no diffs listed.
 	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
 
-## Moving files between storage levels
+## Handing off files from one level to another
 
-### Working copy and staging area
+### From working copy to staging area
 
 Add mod to staging area: **git add**  
 
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
+	diff --git a/bikes.txt b/bikes.txt
+	index db578de..ae9a7e6 100644
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@ -1,2 +1,3 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, GSX750, 
+	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125
+	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	+KTM Duke 170
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git add bikes.txt
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
@@ -127,10 +152,67 @@ Unstage the mod: **git restore**
 ### Local repo to remote repo
 **git push** 
 
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
+	diff --git a/bikes.txt b/bikes.txt
+	index 8223065..e5eebc7 100644
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@ -1,4 +1,3 @@
+	 T250, GT550,  TSR125, DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	 FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	 KTM Duke 170
+	-
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git push
+	Enumerating objects: 5, done.
+	Counting objects: 100% (5/5), done.
+	Delta compression using up to 4 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (3/3), 294 bytes | 294.00 KiB/s, done.
+	Total 3 (delta 2), reused 0 (delta 0)
+	remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+	To ssh://github.com/veikkonyfors/gitest
+	   ddb7198..5fd3cff  main -> main
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+
+
+### Remote repo to local repo
+**git fetch + git merge = git pull**
+
+To find out whether there is a difference between local and  local repo, one needs to do a 'git fetch' first to obtain remote information. Then you can find out the differences and get them to local repo.
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git fetch
+	remote: Enumerating objects: 5, done.
+	remote: Counting objects: 100% (5/5), done.
+	remote: Compressing objects: 100% (3/3), done.
+	remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+	Unpacking objects: 100% (3/3), 685 bytes | 342.00 KiB/s, done.
+	From ssh://github.com/veikkonyfors/gitest
+	   5fd3cff..5b5613d  main       -> origin/main
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
+	diff --git a/bikes.txt b/bikes.txt
+	index fb9f297..e5eebc7 100644
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@ -1,3 +1,3 @@
+	 T250, GT550,  TSR125, DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125, KTM Duke 170
+	-
+	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	+KTM Duke 170
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git merge
+	Updating 5fd3cff..5b5613d
+	Fast-forward
+	 bikes.txt | 4 ++--
+	 1 file changed, 2 insertions(+), 2 deletions(-)
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+
 
 ## Status of repository
 
-### Overall status
+### Local status
 **git status**
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git status
@@ -151,10 +233,10 @@ Unstage the mod: **git restore**
 	
 In the above we have 
 - 1 local commit that has not been pushed to remote
-- bikes.txt has been staged but not committed
+- a version of bikes.txt has been staged but not committed
 - bikes.txt has changed in working tree
 
-i.e. there's a discrepancy between working copy and the staged one.
+i.e. there's a discrepancy between all the levels: working copy, the staged one, local repo and remote repo.
 
 If one wants to 
 - keep staged and working copies distinct -> commit the staged mod first
@@ -162,9 +244,10 @@ If one wants to
 - stage working copy overriding the previous staged one -> git add bikes.txt
 - replace working copy with staged one -> git restore bikes.txt
 
-### Remote vs local status
-During the previous **git status**, we actually had a mod in remote repository of which the local repo was unaware of. To make local repo aware of remote changes, one has to issue **git fetch**.  
-Afterwards the status shows we also have one remote change to be applied locally, if we so wish.
+### Remote changes
+During the above **git status**, we actually had a mod in remote repository of which the local repo was unaware of.  
+To make local repo aware of remote changes, one has to issue **git fetch**.  
+After fetch, the status for the same situation shows we also have one remote change to be applied locally, if we so wish.
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git fetch
 	remote: Enumerating objects: 5, done.
@@ -194,7 +277,9 @@ Afterwards the status shows we also have one remote change to be applied locally
 	
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
 	
-In this situation, if we try to push out local repo to remote, we encounter a problem:
+## Resolving remote vs local conflicts
+	
+In above situation, if we try to push out local repo to remote, we encounter a problem:
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git push
 	To ssh://github.com/veikkonyfors/gitest
@@ -206,7 +291,8 @@ In this situation, if we try to push out local repo to remote, we encounter a pr
 	hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
 	
-	Even pull doesn't work:
+Pull doesn't work either:
+	
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git pull
 	error: Your local changes to the following files would be overwritten by merge:
 		bikes.txt
