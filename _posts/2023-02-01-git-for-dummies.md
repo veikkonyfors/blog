@@ -18,10 +18,10 @@ Trying to clarify basic matters here below, for myself mainly. But why not for o
 	- [Remote git directory](#remote-git-directory)
 - [Standard command line use](#standard-command-line-use)
 	- [Differences between tiers](#differences-between-tiers)	
-	- [Moving files between storage levels](#moving-files-between-storage-levels)
+	- [Handing off files from tier to tier](#handing-off-files-from-tier-to-tier)
 	- [Status of repository](#status-of-repository)
-		- [Overall status](#overall-status)
-		- [Remote vs local status](#remote-vs-local-status)
+		- [Local status](#local-status)
+		- [Remote changes](#remote-changes)
 	- ### Mods in remote not available locally yet
 
 # Tiers of storage
@@ -120,7 +120,7 @@ Remote repo does not know of 'KTM Duke 170' at all.
 	+KTM Duke 170
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
 
-## Handing off files from one level to another
+## Handing off files from tier to tier
 
 
 ### Staging area to local repo
@@ -169,7 +169,7 @@ Add mod to staging area: **git add**
 	-KTM Duke 170
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
 
-Unstage the mod: **git restore**
+In case you want to revert a staged mod, you can nnstage it: **git restore**
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git restore --staged bikes.txt
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
