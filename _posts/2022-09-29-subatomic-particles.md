@@ -72,9 +72,9 @@ Color quantum state is needed, as some hadrons, e.g. $\Delta^{++}$, consist of q
 #### Electronvolt
 
 Unit of energy required to have an electron move through a voltage difference of 1V in an electric field. $1eV=1.602\cdot 10^{-19}J \hspace{1em}(\frac{kgm^2}{s^2})$
-#### QCD
+#### QCD 
 
-Quantumm chromodynamics, describes strong nuclear force.  
+Quantum chromodynamics, describes **Strong Nuclear Force**.  
 Red, green and blue colors add up to neutral.  
 All quarks in the hadron need to have different color, resulting to a colorless hadron.  
 E.g. a proton has UUD quarks, with each having a different color.  
