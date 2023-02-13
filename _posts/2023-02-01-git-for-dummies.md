@@ -8,7 +8,7 @@ tag: Unix
 Turned out I knew very little of git, even if I have used it for years.
 Trying to clarify basic matters here below, for myself mainly. But why not for other dummies as well. ;-)
 
-- [Storage hierarchy](#storage-hierarchy)
+- [Tiers of storage](#tiers-of-storage)
 	- [Local working copy](#local-working-copy)	
 	- [Staging area](#staging-area)
 	- [Local .git repository](#local-git-repository)
@@ -17,14 +17,14 @@ Trying to clarify basic matters here below, for myself mainly. But why not for o
 		- [Manipulation](#manipulation)
 	- [Remote git directory](#remote-git-directory)
 - [Standard command line use](#standard-command-line-use)
-	- [Differing lines](#differing-lines)	
+	- [Differences between tiers](#differences-between-tiers)	
 	- [Moving files between storage levels](#moving-files-between-storage-levels)
 	- [Status of repository](#status-of-repository)
 		- [Overall status](#overall-status)
 		- [Remote vs local status](#remote-vs-local-status)
 	- ### Mods in remote not available locally yet
 
-# Storage hierarchy
+# Tiers of storage
 
 ## Local working copy
 The first level, starting from developer's side, is the local working copy. It is maintained on your workstation's project directory.  
@@ -58,72 +58,115 @@ I mysel am using GitHub hosted services, but there a numerous alternatives for i
 Below some common git commands to find out information on the state of repository.  
 Commands are issued at the project repository directory, where the .git subdirectory lies.
 
-## Finding out Difference between working copy, local repo and remote repo
+## Differences between tiers
 
-Differences can be found between adjacent storage levels.
-To get differences over adjacent levels, on has to do it level by level.
+Story here was to add 'KTM Duke 170' in to repertoire. It was added on a line of it's own. This was committed to local repo.  
+Later on it was preferred to have it in the end of previous line. Added it there but didn't notice to remove final line, so we had it now two times. This mod was staged.  
+Eventually wanted to remove the extra copy by removing the last line. Mod is only in working copy now.  
 
-### Differences between working copy and local repository
+Remote repo did not have 'KTM Duke 170', otherwise it was up to date.
+
+Below the differences of different tiers are shown.
+
+### Working copy and staged copy
 **git diff**
 
-	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
+Working copy has 'KTM Duke 170' in the end of last line, whereas staged copy has it on line of it's own
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff 
 	diff --git a/bikes.txt b/bikes.txt
-	index 16d38c8..db578de 100644
+	index e78250f..c6d06be 100644
 	--- a/bikes.txt
 	+++ b/bikes.txt
-	@@ -1,2 +1,2 @@
-	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, GSX750, 
-	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000
-	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125
-	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
-	
-Staged files are considered as being already in the local repo, no diffs listed.
+	@@ -1,3 +1,2 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	 FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125, KTM Duke 170
+	-KTM Duke 170
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+
+		
 
 ### Differences between staging area and local repository
 **git diff --staged**
 
+Staged copy has 'KTM Duke 170' on line of it's own and in the end of previous line, whereas local repo has it only on line of it's own.
+
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff --staged
 	diff --git a/bikes.txt b/bikes.txt
-	index 16d38c8..db578de 100644
+	index a633e8c..e78250f 100644
 	--- a/bikes.txt
 	+++ b/bikes.txt
-	@@ -1,2 +1,2 @@
-	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, GSX750, 
-	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000
-	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL100
+	@@ -1,3 +1,3 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125, KTM Duke 170
+	 KTM Duke 170
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
 	
 ### Differences between local repository and remote repository
 **git diff \<remote_branch_name\>..\<local_branch_name\>**
 
+Remote repo does not know of 'KTM Duke 170' at all.
+
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
 	diff --git a/bikes.txt b/bikes.txt
-	index 16d38c8..db578de 100644
+	index 9c7426e..a633e8c 100644
 	--- a/bikes.txt
 	+++ b/bikes.txt
-	@@ -1,2 +1,2 @@
-	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, GSX750, 
-	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000
-	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125
+	@@ -1,2 +1,3 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125
+	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	+KTM Duke 170
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
 
 ## Handing off files from one level to another
 
-### From working copy to staging area
+
+### Staging area to local repo
+**git commit** 
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff --staged
+	diff --git a/bikes.txt b/bikes.txt
+	index a633e8c..e78250f 100644
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@ -1,3 +1,3 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125, KTM Duke 170
+	 KTM Duke 170
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git commit
+	[main 21a2047] Commit staged copy
+	 1 file changed, 1 insertion(+), 1 deletion(-)
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff --staged
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+
+
+### Working copy to staging area
 
 Add mod to staging area: **git add**  
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
 	diff --git a/bikes.txt b/bikes.txt
-	index db578de..ae9a7e6 100644
+	index e78250f..c6d06be 100644
 	--- a/bikes.txt
 	+++ b/bikes.txt
-	@@ -1,2 +1,3 @@
-	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, GSX750, 
-	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125
-	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
-	+KTM Duke 170
-	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git add bikes.txt
+	@@ -1,3 +1,2 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	 FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125, KTM Duke 170
+	-KTM Duke 170
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git add bikes.txt 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff --staged
+	diff --git a/bikes.txt b/bikes.txt
+	index e78250f..c6d06be 100644
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@ -1,3 +1,2 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	 FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125, KTM Duke 170
+	-KTM Duke 170
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
 
 Unstage the mod: **git restore**
@@ -141,27 +184,20 @@ Unstage the mod: **git restore**
 	+KTM Duke 170
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
 	
-### Staging area to local repo
-**git commit** 
 
-	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git commit
-	[master 56d080f] test
-	 1 file changed, 1 insertion(+), 1 deletion(-)
-	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
 	
 ### Local repo to remote repo
 **git push** 
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
 	diff --git a/bikes.txt b/bikes.txt
-	index 8223065..e5eebc7 100644
+	index 9c7426e..c6d06be 100644
 	--- a/bikes.txt
 	+++ b/bikes.txt
-	@@ -1,4 +1,3 @@
-	 T250, GT550,  TSR125, DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
-	 FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
-	 KTM Duke 170
-	-
+	@@ -1,2 +1,2 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125
+	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125, KTM Duke 170
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git push
 	Enumerating objects: 5, done.
 	Counting objects: 100% (5/5), done.
@@ -249,19 +285,39 @@ During the above **git status**, we actually had a mod in remote repository of w
 To make local repo aware of remote changes, one has to issue **git fetch**.  
 After fetch, the status for the same situation shows we also have one remote change to be applied locally, if we so wish.
 
+Without fetch:
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git status
+	On branch main
+	Your branch is ahead of 'origin/main' by 1 commit.
+	  (use "git push" to publish your local commits)
+	
+	Changes to be committed:
+	  (use "git restore --staged <file>..." to unstage)
+		modified:   bikes.txt
+	
+	Changes not staged for commit:
+	  (use "git add <file>..." to update what will be committed)
+	  (use "git restore <file>..." to discard changes in working directory)
+		modified:   bikes.txt
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
+	
+Do the fetch:
+	
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git fetch
 	remote: Enumerating objects: 5, done.
 	remote: Counting objects: 100% (5/5), done.
 	remote: Compressing objects: 100% (3/3), done.
 	remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
-	Unpacking objects: 100% (3/3), 695 bytes | 347.00 KiB/s, done.
+	Unpacking objects: 100% (3/3), 683 bytes | 341.00 KiB/s, done.
 	From ssh://github.com/veikkonyfors/gitest
-	   b83c2c6..197b291  main       -> origin/main
-	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
-
-
+	   9fa0aa9..99c3487  main       -> origin/main
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$	
+	
+Status now shows there also is a mod in remote which is not available locally:
+	
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git status
-	On branch master
+	On branch main
 	Your branch and 'origin/main' have diverged,
 	and have 1 and 1 different commits each, respectively.
 	  (use "git pull" to merge the remote branch into yours)
@@ -275,10 +331,59 @@ After fetch, the status for the same situation shows we also have one remote cha
 	  (use "git restore <file>..." to discard changes in working directory)
 		modified:   bikes.txt
 	
-	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
+
+Differences are as follows:
+
+We have removed a line in the end from out working copy:
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
+	diff --git a/bikes.txt b/bikes.txt
+	index 34041ae..c6d06be 100644
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@ -1,3 +1,2 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	 FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125, KTM Duke 170
+	-
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
 	
-## Resolving remote vs local conflicts
+We have staged a copy with 'KTM Duke 170' on its own line, followed by a blank line:
+		
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff --staged
+	diff --git a/bikes.txt b/bikes.txt
+	index b62651c..34041ae 100644
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@ -1,4 +1,3 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+	-KTM Duke 170
+	+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125, KTM Duke 170
+	 
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
 	
+Remote repo has a version where there is 
+ - a TRS125 as the third item on first line, which local repo hasn't got
+ - No clue of KTM Duke 170 
+
+	
+		pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
+		diff --git a/bikes.txt b/bikes.txt
+		index 1ff24df..b62651c 100644
+		--- a/bikes.txt
+		+++ b/bikes.txt
+		@@ -1,3 +1,4 @@
+		-T250, GT550,  TSR125, DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+		-FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125
+		+T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+		+FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125,
+		+KTM Duke 170
+		 
+		pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ 
+
+How do we combine all these mods?
+
 In above situation, if we try to push out local repo to remote, we encounter a problem:
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git push
@@ -300,7 +405,32 @@ Pull doesn't work either:
 	Aborting
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
 	
-Lets commit first as suggested, with some preliminary steps:
+
+## Merging remote and local changes
+	
+The sequence to merge remote and local changes in this situation is as follows:
+	
+Let's first commit our staged modification, just to keep it separate from the change in working copy:
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git commit
+	[main 92a5f05] Add KTM Duke 170 on its own line
+	 1 file changed, 1 insertion(+), 2 deletions(-)
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
+	
+We no have
+
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
+	diff --git a/bikes.txt b/bikes.txt
+	index 34041ae..c6d06be 100644
+	--- a/bikes.txt
+	+++ b/bikes.txt
+	@@ -1,3 +1,2 @@
+	 T250, GT550,  DR125, xv535, DR750, DR650, DR800, DR800, GPZ600, 2*GSX750, 
+	 FZR1000, R6, R1, GSXR600, R1, GSXR1000, GPZ1100, 10r, TL1000, KTM Duke 125, KTM Duke 170
+	-
+	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$
+	
+	
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git add bikes.txt
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff --staged
@@ -401,9 +531,6 @@ Well, the pull changed it, see what we have now
 	
 Let's do what was suggested, add + commit
 	
-	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git add
-	Nothing specified, nothing added.
-	Maybe you wanted to say 'git add .'?
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git add bikes.txt 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git merge
