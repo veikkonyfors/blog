@@ -215,7 +215,7 @@ In case you want to revert a staged mod, you can nnstage it: **git restore**
 ### Remote repo to local repo
 **git fetch + git merge = git pull**
 
-To find out whether there is a difference between local and  local repo, one needs to do a 'git fetch' first to obtain remote information. Then you can find out the differences and get them to local repo.
+To find out whether there is a difference between local and remote repo, one needs to do a 'git fetch' first to obtain remote information. Then you can find out the differences and get them to local repo.
 
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git diff origin/main..HEAD
 	pappa@pappa-ThinkPad-X270:~/wrk/gitestws/gitest$ git fetch
