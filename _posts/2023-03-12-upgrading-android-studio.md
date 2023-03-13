@@ -20,3 +20,15 @@ Googled a bit. After reading some pretty confusing pages, e.g about selecting ch
 Manually installed *jetbrains-toolbox-1.27.3.14493.tar.gz* tarball and ran *jetbrains-toolbox*
 
 It was straight forward job. Now I have Android Studio Electric Eel, 2022.1.1 Patch 2.
+
+Toolbox is pretty effective, it also handles updates for related products, such as plugins and sdks:
+
+<p style="text-align:center;">
+<img src="../../../img/2023-03-12-upgrading-android-studio/eel_chk_updates.png" width="550" height="350"/>
+</p>
+
+Upgraded emulator and platform tools as well:
+
+<p style="text-align:center;">
+<img src="../../../img/2023-03-12-upgrading-android-studio/eel_tools_update.png" width="600" height="450"/>
+</p>
