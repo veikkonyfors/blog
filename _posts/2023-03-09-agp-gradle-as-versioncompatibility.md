@@ -31,7 +31,7 @@ How on earth I am going to do that?
 **Solution**
 
 Turned out to be a nightmare to try obey the recommended actions. Below some details from along the road.
-Might be the easiest way is to upgrade Android Studio to recent version, as suggested on some posts along the way.
+Might be the easiest way is to  [upgrade Android Studio]( ../../../2023/03/12/upgrading-android-studio.html) to recent version, as suggested on some posts along the way.
 
 Tried to set up below configuration
 
