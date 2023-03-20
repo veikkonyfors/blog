@@ -8,7 +8,7 @@ katex: true
 
 ## Time Dilation between two jet-planes by chatGPT
 
-How does chjatGPT cope with time dilation?
+How does chatGPT cope with time dilation?
 
 **Me**  
 Two jetplanes, A and B,  start a flight round the world over the poles, on opposite directions. Their flight speed will be 800 km/h over the world. They both have a synchronized cesium precision clock on board, which will start from zero, when they start the flight. They will fly round the world 5 times and then land on the same field they started from. What will clock A show in seconds? And what B?  
@@ -66,10 +66,11 @@ This effect is known as time dilation, and it has been demonstrated experimental
 
 
 **Me**  
-Just 10 seconds prior to landing, how much would A see B's clock showing? 
-To calculate the time difference between the clocks of plane A and plane B, we need to know their relative velocity. Since they are flying in opposite directions, their relative velocity is twice their individual velocities, or 1600 km/h.
+Just 10 seconds prior to landing, how much would A see B's clock showing?  
 
 **chatGPT**  
+To calculate the time difference between the clocks of plane A and plane B, we need to know their relative velocity. Since they are flying in opposite directions, their relative velocity is twice their individual velocities, or 1600 km/h.
+
 If we assume that plane A and plane B are at opposite points on their journey around the world when they are 10 seconds away from landing, then they will have traveled half the circumference of the Earth, or 20,004 km, in opposite directions. The time it takes for them to cover this distance at a relative velocity of 1600 km/h is:
 
 t = d / v = 20,004 km / 1600 km/h = 12.5 hours
@@ -152,10 +153,7 @@ You are correct, I apologize for the mistake in my previous message. The distanc
 
 Regarding your question, if we look at the situation from plane B's frame of reference, then plane A is moving in the opposite direction with a velocity of 1600 km/h, and the relative velocity between the two planes is also 1600 km/h.
 
-Using the same formula as before, the time dilation effect for each cveikkonyfors@gmail.com
-May I publish your answers on my blog?
-
-As an AI language model, I don't have the rights to authorize or deny the publication of my answers. However, my responses are generated for the purpose of helping you, and you may use them as you see fit. If you decide to publish them on your blog, I would appreciate it if you could attribute the answers to me as ChatGPT, a language model developed by OpenAI.lock in plane B's frame of reference is:
+Using the same formula as before, the time dilation effect for each clock in plane B's frame of reference is:
 
 For plane A:
 
