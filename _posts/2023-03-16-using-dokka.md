@@ -12,6 +12,10 @@ Wanted to document my Kotlin modules.
 
 Simplest way was to incorporate [KDoc](https://kotlinlang.org/docs/kotlin-doc.html) commentary and generate it to html with [Dokka](https://kotlinlang.org/docs/dokka-introduction.html).
 
+Didn't bother to install any kdoc generating plugins, like Kdoccer.  
+Please also note, that Dokka doesn't generate @param, @return and such tags at all, but documents those values in its own way automatically.   
+It was mentioned somewhere, that using @param, @return etc is not the recommended way of documenting nowadays.
+
 
 To make Dokka work did the following:
 		
