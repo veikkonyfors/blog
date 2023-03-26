@@ -9,6 +9,13 @@ katex: true
 
 Had to upgrade my Android Studio, as it was a [nightmare to configure old Chipmunk version]( ../../../2023/03/09/agp-gradle-as-versioncompatibility.html) to function with newly required AGP plugin.
 
+- [Upgrade itself](#upgrade-itself)
+- [Complications after ugrade](#complications-after-upgrade)
+	- [LiveData Transformations unresolved](#livedata-transformations-unresolved)
+
+
+## Upgrade itself
+
 What I had was a manually installed Android Studio Chipmunk, 2021.2.1 on Ubuntu 20.04.4 LTS. By manually installed I mean an installation from android-studio-2021.2.1.14-linux.tar.gz tarball. 
 
 Took *Help-Check for Updates ...* per the old habit, it suggested to download new *Electric Eel* version.  
@@ -32,3 +39,34 @@ Upgraded emulator and platform tools as well:
 <p style="text-align:center;">
 <img src="../../../img/2023-03-12-upgrading-android-studio/eel_tools_update.png" width="600" height="450"/>
 </p>
+
+
+## Complications after upgrade
+
+### LiveData Transformations unresolved
+
+Created a new project with Tabbed Activity template on Electric Eel. It did not compile correctly, left androidx.lifecycle.Transformations.map() as unresolved.  
+Had an earlier project generated with Chipmunk from Tabbed Activity template as well. It works fine even now. Some dependency changes must have taken place, couldn't identify the source though.  
+Instead, after a bit of chatGPT and Googling, turned out Transformations seems to be outdated in newer contexts, one should use methods available in LiveData instead.  
+
+Changed the code to use map method of LiveData class itself
+
+	val text: LiveData<String> = _index.map  
+	
+instead of Transformations.map(_index) method  
+
+	val text: LiveData<String> = Transformations.map(_index)
+
+Goes for other methods in Transformations as well, like switchMap. Spirit of the game nowadays is to use methods available in LiveData instead.  
+
+Imports were changed also to:
+
+	import androidx.lifecycle.*
+	//import androidx.lifecycle.Transformations
+	
+from
+
+	import androidx.lifecycle.LiveData
+	import androidx.lifecycle.MutableLiveData
+	import androidx.lifecycle.Transformations
+	import androidx.lifecycle.ViewModel
