@@ -12,6 +12,7 @@ Had to upgrade my Android Studio, as it was a [nightmare to configure old Chipmu
 - [Upgrade itself](#upgrade-itself)
 - [Complications after ugrade](#complications-after-upgrade)
 	- [LiveData Transformations unresolved](#livedata-transformations-unresolved)
+	- [Duplicate class kotlin.collections.jdk8.CollectionsJDK8Kt found in modules kotlin-stdlib-1.8.10](#duplicate-class-kotlincollections)
 
 
 ## Upgrade itself
@@ -70,3 +71,21 @@ from
 	import androidx.lifecycle.MutableLiveData
 	import androidx.lifecycle.Transformations
 	import androidx.lifecycle.ViewModel
+
+### Duplicate class kotlincollections
+
+In one of my older projects, created under chipmunk, some dependencies were highlighted due to a newer version being available. Changed all those to newer version indicated by hovering over the highlight.  Unfortunately App didn't build after that, gave instead countless messages like the one below:
+
+	Duplicate class kotlin.collections.jdk8.CollectionsJDK8Kt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.0 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0)
+	
+Had to switch AGP plugin from 1.7.10 to 1.8.0 in project level build.gradle: 
+
+	plugins {
+    id 'com.android.application' version '7.4.2' apply false
+    id 'com.android.library' version '7.4.2' apply false
+    //id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+	}
+
+	
+	
