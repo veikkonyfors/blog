@@ -21,9 +21,9 @@ Half-life on $$\mu$$-mesons is 2.2*10^-6 s, which has been measured with laborat
 
 Speed of muons analyzed is narrowed down to be 0.995c to 0.9954c by:  
 - A pile of metal bricks above the measurement apparatus, which will stop all muons with speed less than 0.995c.  
-The measurement device itself underneath is a device called scintillator. A cylinder filled with specific combound of plastic.  
-This compound reacts to muon decays by generating a pulse of light (photon) which can the be detected.  
-Compound is also so 'thick', that it slows down muons a lot more than air does. With height of 60 cm, all muons traveling slower than 0.9954c will stop in the cylinder and then decay. Muons with higher speed will most likely pass through device without decaying.
+- The measurement device itself underneath is a device called scintillator. A cylinder filled with specific combound of plastic. Compound is so 'thick', that it slows down muons a lot more than air does. With height of 60 cm, all muons traveling slower than 0.9954c will stop in the cylinder and then decay. Muons with higher speed will most likely pass through device without decaying.
+
+The compound in scintillator also reacts to muon decays by generating a pulse of light (photon) which can the be detected.  
 
 On top of the mountain they counted 568 decays in one hour.  
 147 of those were ones, that took more than 6 microseconds to decay in scintillator. In 6 microseconds our muons would had traveled the 2000 meters from top of the mountain to sea-level in the air.  Expectation is, that when they repeat experiment at sea level, they should count about 147 decays there.
