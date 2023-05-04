@@ -11,6 +11,7 @@ katex: true
 ## Overview
 
 |[Elementary]( "Not composed of any sub-particles per current understanding")|[Fermion]( "Half odd int spin, obey Pauli exclusion principle")|[Quark]( "constitute matter in form of hadrons")|Up|
+|"|"|"|Down|
 |"|"|"|Charm|
 |"|"|"|Strange|
 |"|"|"|Top|
