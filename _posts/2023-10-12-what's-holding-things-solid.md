@@ -34,12 +34,16 @@ Protons and neutrons in the nucleus are held together by residual nuclear force.
 Residual nuclear force is mediated by gluons. In this case, I suppose, gluons are exchanged between quarks in distinct protons and/or neutrons.  
 Earlier understanding was that Pions, or quark-antiquark pairs, were mediating this force. If huge enough amount of energy is proposed, a quark can stretch out from the proton. Once this happens, the quark immediately couples with an anti-quark to form a Pi-meson. The anti-quark has been formed, I guess, by the huge amount of energy around. This Pion is very unstable and decomposes back to a quark and anti-quark pair very shortly. When this is close to another proton, the anti-quark combines with the quark inside the proton making them both disappear, causing the left around quark to join the proton. Also gluons were involved in this process, when quark and anti-quark pairs were formed and decayed.
 
+There is another force that takes effect in nucleus, weak nuclear force. Several kinds of it exist, including beta decaying, electron capture. Hoping to be able to go through all of these some day.
+
 #### Proton and Neutron
 Protons and neutrons are built of quarks, specifically Up and Down quarks.  
 Proton has UP+Up+Down (UUD) quarks, neutron has DDU.  
 
 Quarks within proton and neutron are held together by strong nuclear force.  
 Strong nuclear force is caused by quarks exchanging gluons inside the proton or neutron.
+
+
 
 ## Electron
 In equilibrium state there is as many electrons as there is protons in nucleus.  
