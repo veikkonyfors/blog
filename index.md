@@ -23,13 +23,20 @@ You'll see it beneath :-)
 {% endfor %}
 </ul>
 <HR>
+
+{% assign blog = "../blog" %}
+{% if jekyll.environment == "development" %}
+{% assign blog = "" %}
+{% endif %}
+
+
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div>
 {% for tag in site.tags %}
   <h3 ID="{{ tag[0] }}">{{ tag[0] }}</h3>
   <ul>
     {% for post in tag[1] %}
-      <li>
-      <a href="../blog{{ post.url }}">{{ post.title }}</a>
+      <li>   	
+ 		<a href="{{blog}}{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
