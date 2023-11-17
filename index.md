@@ -15,6 +15,7 @@ Oh dear, now I had some poems included.
 I am now uncertain whether I can help of not adding whatever categories I feel tempting.  
 You'll see it beneath :-)
 
+
 <ul>
 {% for tag in site.tags %}
    <li>
@@ -34,7 +35,8 @@ You'll see it beneath :-)
 {% for tag in site.tags %}
   <h3 ID="{{ tag[0] }}">{{ tag[0] }}</h3>
   <ul>
-    {% for post in tag[1] %}
+    {% assign sorted_posts = tag[1] | reverse %}
+    {% for post in sorted_posts %}
       <li>   	
  		<a href="{{blog}}{{ post.url }}">{{ post.title }}</a>
       </li>
