@@ -1,15 +1,14 @@
 ---
 layout: default
 title:  "Electricity"
-description: "Summary on electricity"
+description: "Wrap-up of electricity"
 tag: Electromagnetism
 katex: true
 ---
 
 ## Electricity
 
-In order to be able to proceed acquainting on quantum mechanics and general relativity, it became evident one needs to be somewhat familiar with electromagnetism. Actually quite a lot.
-That was my intuition from the beginning, but now it has turned out to be a necessity to carry on. Thus, now familiarizing with electromagnetism as well. Starting this journey with wrapping up some of the main points in electricity.  
+First bit in electromagnetism.
 
 ### Electric charge
 If an object has more electrons than protons, object's charge is said to be negative. Positive if vice versa. Neutral otherwise.  
