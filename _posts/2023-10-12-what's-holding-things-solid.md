@@ -74,7 +74,7 @@ I.e. it has 2 electrons on first shell's s subshell, 2 electrons on second shell
 Electron configuration of Xenon, $^{131}_{77}\text{Xe}$ is 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶
 
 
-**Magnetic Quantum Number (m_l or m)** specifies spatial orientation of the subshell. Not more on that here.
+**Magnetic Quantum Number (m_l or m)** specifies spatial orientation of the subshell. This feature is the basis for magnetism. More of that in [Magnetism](../../../2022/09/20/magnetism.html)
 
 Finally to the point, what keeps the electron from not falling to the positively charged nucleus? Due to electromagnetic attraction it really should, shouldn't it?  
 Or, what keeps the electron not from shooting out of nucleus' reach.
