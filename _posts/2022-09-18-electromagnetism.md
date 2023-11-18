@@ -11,8 +11,8 @@ katex: true
 In order to be able to proceed acquainting on quantum mechanics and general relativity, it became evident one needs to be somewhat familiar with electromagnetism. Actually quite a lot.  
 That was my intuition from the beginning, but now it has turned out to be a necessity to carry on with. Thus, now familiarizing with electromagnetism as well.  
 
-Starting this journey with wrapping up some of the main points in electricity.  
-Followed by a summary on magnetism.  
-Finalized with an outline of electromagnetic radiation.  
+Starting this journey with wrapping up some of the main points in [electricity](../../../2022/09/19/electricity).  
+Followed by a summary on [magnetism](../../../2022/09/20/magnetism).  
+Finalized with an outline of [electromagnetic radiation](../../../2022/09/21/em-radiation).  
 
 After those some more related details, such as Maxwell Equations.
