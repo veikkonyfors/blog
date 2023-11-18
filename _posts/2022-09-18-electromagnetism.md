@@ -12,7 +12,7 @@ In order to be able to proceed acquainting on quantum mechanics and general rela
 That was my intuition from the beginning, but now it has turned out to be a necessity to carry on with. Thus, now familiarizing with electromagnetism as well.  
 
 Starting this journey with wrapping up some of the main points in electricity.  
-Followed by a summary on magnetism.
+Followed by a summary on magnetism.  
 Finalized with an outline of electromagnetic radiation.  
 
 After those some more related details, such as Maxwell Equations.
