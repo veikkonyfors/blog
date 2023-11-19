@@ -58,7 +58,7 @@ Electrons position and energy is described with three quantum numbers.
 Describes the energy level of the electron. Called **shell** or orbit. The higher the number, the further away from nucleus and the higher the energy.  
 
 **Angular Momentum Quantum Number l**, l = 0 - 2^n-1
-Characterizes the shape of the volume. This is called a **subshell** and is synonymous (kind of :-) to atomic orbital.  Subshells are named s, p, d and f. Each subshell can have max 2 electrons, with distinct spins.  
+Characterizes the shape of the volume. This is called a **subshell** and is synonymous (kind of :-) to atomic orbital.  Subshells are named s, p, d and f. Each subshell can have max 2 electrons, with distinct [magnetic quantum numbers]( "m_l, see below").  
 Subshells are organized on each shell as below.  
 
 First shell n=1 has one s subshell -> max 2 electrons.  
