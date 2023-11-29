@@ -28,6 +28,13 @@ v=\text{relative speed between objects}\\
 t'=\text{time observed in observing object's frame}\\
 $$
 
+Why would that be:
+This is how I am reasoning cause for time dilation. 
+Time is fourth dimension on top of our 3D world. As it is hard for a human to comprehend 4D, let's imagine we were in space with only one spatial dimension. We only could move on X axis direction. Additionally we had time dimension which is running in perpendicular T-axis.  
+Me and my pal are stationary at the same spot on X and T axis. Now my pal starts moving fast to the right on X axis. As time is running, my pal also goes upwards on T axis. Me myself staying still on X axis, but time is running for me as well i.e. T is increasing.  
+We both have a clock device, based on light running between two opposite mirrors. Whenever certain amount of rounds between mirrors have taken place, one second is ticked. From my standpoint light in my pal's light clock light is traveling not straight but along a zig-zag kind of curve, which is somewhat longer than the curve my clock's light was traveling, being stationary along X axis and only moving on T axis upwards.  
+Now that speed of light is constant and my pal's clock light has traveled a longer journey, it must be my pal's clock must have been ticking more slowly.
+
 Example:\\
 I have two synchronized precision clocks A and B 18x10^8 m apart from each other.\\
 A satellite is traveling above on the sky with speed 1.8x10^8 m/s, in line with my clocks. There's a clock C in the satellite, which is synchronized with my clocks.  
