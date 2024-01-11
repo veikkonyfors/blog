@@ -8,7 +8,7 @@ katex: true
 
 ## Electricity
 
-First bit in electromagnetism.
+First bit in [electromagnetism](../../../2022/09/18/electromagnetism).
 
 ### Electric charge
 If an object has more electrons than protons, object's charge is said to be negative. Positive if vice versa. Neutral otherwise.  

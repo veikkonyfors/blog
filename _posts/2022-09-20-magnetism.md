@@ -36,10 +36,16 @@ Iron, cobalt and nickel are good examples of such elements.
 
 When forming a compound, atoms can locate themselves magnetically oriented in the same direction or in opposite direction one by one. By nature, this is a random process, leaving the compound unmagnetized in total.  
 However, if an object with magnetized atoms is put in a magnetic field, it's atoms get adjusted with the magnetic field around and object itself becomes magnetized as well. Again, Fe, Co and  Ni are good examples of this.  
-It is believed, that natural static magnets have been born in association with a strong electric field such as one caused by lightning. Lodestone,also called magnetite, is a natural static magnet.
+It is believed, that natural static magnets have been born in association with a strong electric field such as one caused by lightning. [Lodestone](https://en.wikipedia.org/wiki/Lodestone), also called magnetite, is a type of natural static magnet.
 
 
-### Electric Magnetism
+### Electric magnetism
+
+A stable electric charge creates a static electric field around it, as described in [electricity](../../../2022/09/19/electricity#electric-field). In practice, however, it is very seldom that charge is stable. Instead charges most always at least vibrate, unless they reach absolute zero temperature.  
+When an electric charge is moving, it makes the electric field fluctuate around it. An [electromagnetic wave](../../../2024/01/11/electromagnetic-wave) is created.  
+Changing electric field then creates a changing magnetic field. One can demonstrate this by setting a compass next to an electric wire. Compass needle adjusts to magnetic field immediately when [electric current](../../../2022/09/19/electricity#electric-current) is turned on.  
+Put electric wiring around a magnetizable object and and electric magnet is born.
+
 
 
 
