@@ -34,9 +34,10 @@ Iron, cobalt and nickel are good examples of such elements.
 
 ### Compound level
 
-When forming a compound, atoms can locate themselves magnetically oriented in the same direction or in opposite direction one by one. Depends on material's chemical properties which way compound reaches its lowest energy level.  
-In first case, compound is magnetic, in latter non magnetic.
-Again, Fe, Co and  Ni are good examples of the first one, being highly magnetizable.
+When forming a compound, atoms can locate themselves magnetically oriented in the same direction or in opposite direction one by one. By nature, this is a random process, leaving the compound unmagnetized in total.  
+However, if an object with magnetized atoms is put in a magnetic field, it's atoms get adjusted with the magnetic field around and object itself becomes magnetized as well. Again, Fe, Co and  Ni are good examples of this.  
+It is believed, that natural static magnets have been born in association with a strong electric field such as one caused by lightning. Lodestone,also called magnetite, is a natural static magnet.
+
 
 ### Electric Magnetism
 
