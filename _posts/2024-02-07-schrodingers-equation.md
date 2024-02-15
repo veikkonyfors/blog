@@ -26,14 +26,18 @@ $$\frac{∂\Psi}{∂t}$$ is first derivate of $\Psi$ (a.k.a. $\Psi'$)
 $$\Psi$$ is the function to be solved
 
 Sometimes $$\Psi$$ is written in ket notation $$\vert\Psi\rangle$$.  
-This indicates wave function to be solved is not a scalar one, but a column vector instead. It has as many rows as there is columns on the rows of the $\hat{H}$ operator. Each $$\Psi_i$$ component describes the function for the system's state in question.
+
+$$iℏ\frac{∂\vert\Psi\rangle}{∂t}−\hat{H}\vert\Psi\rangle=0$$ 
+
+This indicates wave function to be solved is not a scalar one, but a column vector instead.  
+It has as many components as there is quantum states of interest for the system.  
 
 ## Hamiltonian operator
 
-Hamiltonian operator is a nxm matrix giving energy and status for possible states on specific times.
-To Be Continued . . .
+Hamiltonian operator is a square matrix giving energy and status for possible state transitions.   
+If there is N quantum states to deal with, $\hat{H}$ operator is a NxN matrix. Each entry describes energy and dynamics between distinct states. E.g. $$\hat{H}_{ij}$$ describes interaction from state i to state j and will be applied on $$\Psi_j$$,i.e. the function describing jth state.
 
-## Other forms of Schrödinger equation
+## Other forms of Schrödinger equatio
 
 $$i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ -\frac{\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t) \right ] \Psi(\mathbf{r},t)$$
 
