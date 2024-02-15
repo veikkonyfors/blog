@@ -35,7 +35,7 @@ It has as many components as there is quantum states of interest for the system.
 ## Hamiltonian operator
 
 Hamiltonian operator is a square matrix giving energy and status for possible state transitions.   
-If there is N quantum states to deal with, $\hat{H}$ operator is a NxN matrix. Each entry describes energy and dynamics between distinct states. E.g. $$\hat{H}_{ij}$$ describes interaction from state i to state j and will be applied on $$\Psi_j$$,i.e. the function describing jth state.
+If there is N quantum states to deal with, $\hat{H}$ operator is a NxN matrix. Each entry describes energy and dynamics between specific pair of states. E.g. $$\hat{H}_{ij}$$ describes interaction from state i to state j and will be applied on $$\Psi_j$$, i.e. the function describing jth state: $$\hat{H}_{ij}\cdot\Psi_j$$
 
 ## Other forms of Schrödinger equatio
 
