@@ -24,7 +24,7 @@ katex: true
 |"|"|"|[W Boson]( "Weak nuclear force carrier")|
 |"|"|"|[Z Boson]( "Weak nuclear force carrier")|
 |"|"|[Scalar]( "Zero spin")|Higgs|
-|[Composite]( "Composed of quarks")|[Hadron]( "Two or more quarks")|[Baryon]( "Odd number of quarks")|Proton|
+|[Composite]( "Composed of quarks")|<a name="Hadron"></a>[Hadron]( "Two or more quarks")|[Baryon]( "Odd number of quarks")|Proton|
 |"|"|"|Neutron|
 |"|"|[Meson]( "2 quarks")|Pion|
 |"|"|"|Rho|
@@ -66,20 +66,22 @@ katex: true
 
 #### Color charge
 
-Related to strong nuclear force, [QCD](#qcd "Quantum chromodynamics.")
-Red, green or blue.  
+Red, green or blue.
+Relates to strong nuclear force, dealt with in [QCD](#qcd "Quantum chromodynamics.").
+ 
 Color quantum state is needed, as some hadrons, e.g. $\Delta^{++}$, consist of quarks with some incompatible quantum states otherwise 
 
 #### Electronvolt
 
 Unit of energy required to have an electron move through a voltage difference of 1V in an electric field. $1eV=1.602\cdot 10^{-19}J \hspace{1em}(\frac{kgm^2}{s^2})$
+
 #### QCD 
 
 Quantum chromodynamics, describes **Strong Nuclear Force**.  
 Red, green and blue colors add up to neutral.  
-All quarks in the hadron need to have different color, resulting to a colorless hadron.  
+All quarks in a [hadron](#Hadron "Baryon or Meson") need to have different color, resulting to a colorless hadron.  
 E.g. a proton has UUD quarks, with each having a different color.  
-Two of these quarks, at a time, continuously, interchange their colors by exchanging a gluon.  
+Two of these quarks at a time, but continuously, interchange their colors by exchanging a gluon.  
 Gluon becomes the force carrying particles between these quarks, mediating the strong nuclear force.
 
 
