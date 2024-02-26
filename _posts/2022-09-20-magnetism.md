@@ -6,20 +6,20 @@ tag: Electromagnetism
 katex: true
 ---
 
-## Magnetism
+# Magnetism
 
 Second element in [electromagnetism](../../../2022/09/18/electromagnetism).
 
 There's two types of magnetism, [static](#static-magnetism) and [electric](#electric-magnetism).
 
-### Static Magnetism
+## Static Magnetism
 
 Static magnetism is the kind of magnetism where e.g. two pieces of iron attract and/or repel each other if they are brought near enough to each other.  
 Magnetic force is inversely proportional to the square of the distance, thus if the distance is big, the force is not big enough to cause any motion. But even in this case magnetic items are adjusting to the magnetic field to reach the minimal energy level. This is what we see with compass needle.  
 
 Static magnetism is given birth at particle level by electrons, accumulated from there first to atoms and eventually to compounds of atoms, like the horse shoe magnet and compass needle.
 
-#### Electron level
+### Electron level
 
 Electrons have a property called [Magnetic Quantum Number (m_l)](../../../2023/10/12/what's-holding-things-solid.html#electron). This number is either positive, negative or zero, with the absolute value being that of Angular Momentum Quantum Number (l) minus 1.  
 Being positive, makes the electron to be 'magnetized' to opposite direction of a negative one. Each individual electron will then try to adjust to magnetic field around by turning towards either north or south pole of the field, depending whether m_l is positive or negative.
@@ -39,12 +39,12 @@ However, if an object with magnetized atoms is put in a magnetic field, it's ato
 It is believed, that natural static magnets have been born in association with a strong electric field such as one caused by lightning. [Lodestone](https://en.wikipedia.org/wiki/Lodestone), also called magnetite, is a type of natural static magnet.
 
 
-### Electric magnetism
+## Electric magnetism
 
-A stable electric charge creates a static electric field around it, as described in [electricity](../../../2022/09/19/electricity#electric-field). In practice, however, it is very seldom that charge is stable. Instead charges most always at least vibrate, unless they reach absolute zero temperature.  
-When an electric charge is moving, it makes the electric field fluctuate around it. An [electromagnetic wave](../../../2024/01/11/electromagnetic-wave) is created.  
-Changing electric field then creates a changing magnetic field. One can demonstrate this by setting a compass next to an electric wire. Compass needle adjusts to magnetic field immediately when [electric current](../../../2022/09/19/electricity#electric-current) is turned on.  
-Put electric wiring around a magnetizable object and and electric magnet is born.
+If charged object is moving in steady speed, it creates a **magnetic field** around it.  
+One can demonstrate this by setting a compass next to an electric wire. Compass needle adjusts to magnetic field immediately when [electric current](../../../2022/09/19/electricity#electric-current) is turned on.  
+
+Put electric wiring around a magnetizable object, let current flow and and electric magnet is born.
 
 
 
