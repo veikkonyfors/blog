@@ -49,9 +49,18 @@
           <hr>
           <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+          <br>
+          <p id="disclaimer"></p>
+          <script>
+            var node; node=document.getElementById("disclaimer");
+            if (window.location.pathname != '/blog/') {
+              node.innerHTML = '<span class="credits left"><a href="../../../1977/07/22/disclaimer">Disclaimer</a></span>';
+              node.style.visibility='visible'
+            }
+		  </script>
+          <hr> 
         </div>
-          <hr>
-          
+
         {{ content }}
 
       </section>
