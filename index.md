@@ -6,7 +6,9 @@ layout: default
 I'm glad you are here.
 
 I plan to talk mostly about Quantum Mechanics with a layman's attitude.  
-Trying to work out how it goes. With ambition of getting it right in the end. Likely I take quite a few incorrect paths on the way. So one must beware not take quantum stuff I present here for the final truth. It may be fake news on the way. I surely let you know once I am confident about this all.
+Trying to work out how it goes. With ambition of getting it right in the end. Likely I take quite a few incorrect paths on the way.  
+
+So, please have a look on the [Disclaimer](1977/07/22/disclaimer)
 
 Might be I have a few words on ICT as well, probably not as much as a layman at all.  
 Without ruling environmental sustainability out.  
