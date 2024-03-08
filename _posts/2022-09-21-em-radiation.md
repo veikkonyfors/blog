@@ -27,16 +27,14 @@ Fusion reactions are taking place in stars all over our universe. Specifically i
 Fission reactions take place in the stars towards the end of their life cycle, in supernova phase. When all initial material required in fusion (H, He, etc) have ran out, star enters supernova phase, in which also fission reactions are occurring.  
 Here on earth, we cause fission reactions in our nuclear plants.
 
-In these reactions gamma radiation, among other stuff, is released.  
+In fusion and fission gamma radiation is released.  
 Gamma radiation is form of electromagnetic radiation, i.e. photons. Gamma photons are the most energetic photons, having the shortest wavelength. These gamma photons then excite electrons on various types of atoms [on the way]( "even in the sun already, which contain minor amounts of other stuff than hydrogen and helium") (to earth ;). While these then relax, new photons are emitted with frequencies typical to the material in question. Including visible light.  
+In fusion also beta radiation is emitted. Beta radiation consists of free electrons. Being accelerating charges, these generate electromagnetic radiation as well.
 
-<!--In our fusion reactors we perceive blue glow in the water in the core, caused by gamma radiation exciting water molecules
+Electromagnetic radiation can also be caused by accelerating ions.  
+Solar winds are flows of ions from sun's outer layers. Nortrhern lights are born due to magnetic field changes associated with solar winds.
 
-
-Electrons mass f = ma
-
-Ion
-
+<!--
 Antenna.-->
 
 [//]: # (Tämä on myös kommentti.)
