@@ -36,7 +36,7 @@ If another electric charge (q) is put in this field, at any point of it, there i
   
 Strength of the electric field at each  point is defined to be the force effecting a charge Q at that point divided by Q itself:  
 
-$\vec{E}=\frac{\vec{F}}{q}=\frac{1}{4\pi\epsilon_{0}} \frac{Q}{r^{2}}$ (spot Coulomb's law in the last)
+$\vec{E}=\frac{\vec{F}}{q}=\frac{1}{4\pi\epsilon_{0}} \frac{Q}{r^{2}}$
 
 *Q* &nbsp; is the source charge constituting electric field $\vec{E}$, which induces electric force $\vec{F}$ affecting charge *q*&nbsp; put at the distance of *r*&nbsp; from the source charge *Q*.
 
@@ -51,7 +51,8 @@ Electric current is measured by amperes (amps, A): One Coulomb of elementary cha
 
 $1A=1\frac{C}{s}, \implies C=As$
 
-On a metallic wire, an electric field is created within it when it's ends are connected to a power supply. This makes loosely connected electrons on outer shell of the metal to start moving in the field.  
+On a metallic wire, an electric field is created within it when it's ends are connected to a power supply. This makes loosely connected electrons on outer shell of the metal to start moving in the field.   
+Power supply is a device with two poles, with the other (negative) having more electrons than the other (positive). Power supplies can be created e.g. with chemical reactions and electromagnetic radiation.
 
 Moving electric charges can also be bigger entities, like [ions](../../../2022/09/20/ions.html). If table salt, $Na^+ Cl^-$ is dissolved in water, $Na^+$ and $Cl-$ ions get separated due to water molecules dipole effect. Once an electric field is generated in this liquid, ions start to travel along the field.
  
