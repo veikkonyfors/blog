@@ -62,7 +62,9 @@ $W=\vec{F}\Delta x$, by which amount potential energy is also changed.
 As $\vec{F}=\vec{E}q$, potential energy of the electron is $W=E_p=\vec{E}e\Delta x$ when compared to electron's starting point.  
 
 It is interesting how this correlates with gravitational potential energy $E_g=mgh$.  
-Objects mass $m$ relates to electric charge $e$, $h$ relates to $\Delta x$ and acceleration of gravity $g$ relates to $\vec{E}$. Only that $g$ is a simplified constant derived empirically to fit exactly gravitational field $\vec{g}$ on earth's surface.
+Objects mass $m$ relates to electric charge $e$, $h$ relates to $\Delta x$ and acceleration of gravity $g$ relates to $\vec{E}$. Only that $g$ is a simplified constant derived empirically to fit exactly gravitational field $\vec{g}$ on earth's surface.  
+The further charge is from another, the more is potential energy, the less is electric force.  
+The same goes with gravity on earth. The higher the object, the bigger potential energy and the less gravity.
 
 ### Potential of electric field
 To get potential for electric field itself, we devide field $\vec{E}$ by the charge $Q$. Thus we get a general feature describing the field itself, independently from the charge in question.  
