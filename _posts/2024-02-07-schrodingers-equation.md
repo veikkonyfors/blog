@@ -54,7 +54,7 @@ Easy to say, hard to lay ;) Preparing a simple sample . . .
 ### Let's start with an easy system of one measurable.
 
 We have a system with two four sided dices. Each dice, when thrown, give a digit from 1 to 4. Our only measurable in this system is the sum of the two digits.  
-The sum can be from 2 to 8. Probabilities for each of the sums: 2 - 1/16, 3 - 2/16, 4 - 4/16, 5 - 6/16, 6 - 4/16, 7 - 2/16, 8 1/16.  
+The sum can be from 2 to 8. Probabilities for each of the sums: 2 - 1/16, 3 - 2/16, 4 - 3/16, 5 - 4/16, 6 - 3/16, 7 - 2/16, 8 1/16.  
 
 As there is 7 possible outcomes after measurement (2, 3, 4, 5, 6, 7 or 8), and only one measurable, our state vector has 7 items, one for each of the sums.  
 Each item gives probability amplitude for measuring the sum in question, probability amplitudes being usually imaginary numbers. Taking the absolute square of this number then gives the probability of the measurement ending up in this state.   
@@ -66,8 +66,12 @@ In our sample here, the probability of the first outcome, 1/16, would be given b
 So, we need a vector with 7 items. Taking absolute square of each should give the probability for measuring that sum. 
 Thus our state vector would look like this
 
-$$\begin{pmatrix} 1/4 \\ \frac{\sqrt{2}}{4}\\ 2/4\\  \frac{\sqrt{6}}{4}\\ 2/4\\ \frac{\sqrt{2}}{4}\\ 1/4 \end{pmatrix}$$
+$$\begin{pmatrix} 1/4 \\ \frac{\sqrt{2}}{4}\\ \frac{\sqrt{3}}{4}\\ 2/4\\  \frac{\sqrt{3}}{4}\\ \frac{\sqrt{2}}{4}\\ 1/4 \end{pmatrix}$$
 
+This simple dice sample is time independent, i.e. each and every throw has the same propability vector. But if we would have it somehow manipulated in such a way, that probability density would vary between rounds, we would have a varying state vectors for varying rounds. Our sample would become 'round-dependent', time-dependent in a way.  
+Our wave function would also be 'round-dependent' $$\Psi(i)$$, where i stands for the round. Solution would be 'round-specific' state vector $$\Psi(i) = \vert\Psi_i\rangle$$
+
+ 
 ### Sample with two measurables.
 
 This will be a bit harder.  
