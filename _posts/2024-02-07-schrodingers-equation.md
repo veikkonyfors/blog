@@ -69,7 +69,7 @@ Thus our state vector would look like this
 $$\begin{pmatrix} 1/4 \\ \frac{\sqrt{2}}{4}\\ \frac{\sqrt{3}}{4}\\ 2/4\\  \frac{\sqrt{3}}{4}\\ \frac{\sqrt{2}}{4}\\ 1/4 \end{pmatrix}$$
 
 This simple dice sample is time independent, i.e. each and every throw has the same propability vector. But if we would have it somehow manipulated in such a way, that probability density would vary between rounds, we would have a varying state vectors for varying rounds. Our sample would become 'round-dependent', time-dependent in a way.  
-Our wave function would also be 'round-dependent' $$\Psi(i)$$, where i stands for the round. Solution would be 'round-specific' state vector $$\Psi(i) = \vert\Psi_i\rangle$$
+Our wave function would also be 'round-dependent' $$\Psi(i)$$, where i stands for the round. Round specific solution would be round-specific state vector $$\Psi(i) = \vert\Psi_i\rangle$$
 
  
 ### Sample with two measurables.
