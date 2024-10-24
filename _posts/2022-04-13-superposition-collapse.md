@@ -8,6 +8,8 @@ katex: true
 
 ## Superposition and it's collapse
 
+### Possibly fake news! Superposition misunderstood so far. Under construction per new understanding of superposition.
+
 Superposition is the kind of normal state for any [quantum object](https://veikkonyfors.github.io/blog/2022/04/16/quantum-objects.html). In superposition state, quantum object is a bunch of energy, with all of it's properties wiggling wildly. In this state, we are not able to determine the exact state of the object in an understandable or measurable way for us humans. Properties like spin, momentum, location or any other of the quantum properties are kind of in between in linear combination of all the possible values. This linear combination of values is characterized by a wavefunction like Schrödinger equation:
 
 $$ i\hbar \frac{\delta }{\delta t}|\psi(t)\rangle = \hat{H}|\psi(t)\rangle $$
