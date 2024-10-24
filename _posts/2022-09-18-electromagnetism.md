@@ -20,5 +20,3 @@ Frame of reference is essential here, if the observer would be moving along the 
 And furthermore, if the charge is accelerating, it will emit photons, i.e. creates [electromagnetic radiation](../../../2022/09/21/em-radiation). As happens when atom's electron gets excited.
 
 Electromagnetic radiation propagates as [electromagnetic waves](../../../2024/01/11/electromagnetic-wave) in space-time.
-
-however, it is very seldom that charge is stable. Instead charges most always at least vibrate, unless they reach absolute zero temperature.  
