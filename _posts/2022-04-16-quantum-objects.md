@@ -19,7 +19,7 @@ Quantum object may have various measurable quantum properties, degrees of freedo
   - x-y-z location
   - time
   
-- Electron -
+- Electron - quantum numbers are associated with electrons position around nucleus
   - Principal quantum number, $n$. Energy level or  shell/orbital electron is in an atom.
   - Azimuthal quantum number, $l$. Orbital angular momentum, shape of the orbital, a.k.a. sub-shell. Values 0 - $n$-1.
   - Magnetic quantum number, $m_l$. Values $-l\hspace{1em} to \hspace{1em} +l$, including 0.
