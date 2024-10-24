@@ -13,7 +13,7 @@ People naturally think of light in connection to their vision. In that context, 
 That's not incorrect. A bit simplistic though.
 
 Quantum-mechanically light is made of a bundles of energy called photons. 
-Photons are quantums of energy representing not only visible light, but all [electromagnetic]( ../../../2022/10/05/electromagnetism.html) radiation.  
+Photons are quantums of energy representing not only visible light, but all [electromagnetic radiation]( ../../../2022/09/21/em-radiation) .  
 Photons can act like waves or particles depending on the context. See more on this Wave-Particle duality at [Double slit experiment's single photon interference](../../../2022/03/20/double-slit-experiment-single-photon-interference.html)  
 Photons also act as carriers of electromagnetic force while being exchanged between electrons on atoms's orbitals.
 
