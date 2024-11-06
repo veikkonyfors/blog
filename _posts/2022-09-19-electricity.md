@@ -86,3 +86,9 @@ Thus unit of electric field's strength can also be expressed as
 
 $[E]=\frac{V}{m}=\frac{\frac{J}{C}}{m}=\frac{N\cdot m}{As\cdot m}=\frac{N}{C}$
 
+_Note II !_  
+With electricity, it is not relevant how far the charge is moving to perform the work (= potential energy). As it is in Newtonian work.  
+This has been a bit mind boggling for me.  
+Take a 12V motorcycle battery. One Coulomb's charge takes 12 Joules to move between poles, no matter is the wire 8cm or 1 meter.  
+I let myself understand that as each and every electron moving on the wire are side by side, repelling each other, this is what makes the distance irrelevant.
+
