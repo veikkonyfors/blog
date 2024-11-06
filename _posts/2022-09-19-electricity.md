@@ -51,40 +51,38 @@ Electric current is measured by amperes (amps, A): One Coulomb of elementary cha
 
 $1A=1\frac{C}{s}, \implies C=As$
 
-On a metallic wire, an electric field is created within it when it's ends are connected to a power supply. This makes loosely connected electrons on outer shell of the metal to start moving in the field.   
+On a metallic wire, an electric field is created within it when it's ends are connected to a power supply. This makes loosely connected electrons on outer shell of the metal atoms to start moving in the field.   
 Power supply is a device with two poles, with the other (negative) having more electrons than the other (positive). Power supplies can be created e.g. with chemical reactions and electromagnetic radiation.
 
 Moving electric charges can also be bigger entities, like [ions](../../../2022/09/20/ions.html). If table salt, $Na^+ Cl^-$ is dissolved in water, $Na^+$ and $Cl-$ ions get separated due to water molecules dipole effect. Once an electric field is generated in this liquid, ions start to travel along the field.
  
-### Charge's potential in [homogeneous](#potential-in-homogeneous-electric-field "electric force is the same in every point of field") electric field
-In each point of electric field a force of $\vec{F}=\vec{E}q$ acts on a charge q.  
+### A single charge's potential energy in [homogeneous](#potential-in-homogeneous-electric-field "electric force is the same in every point of field. Exists e.g. between two metallic plates with opposite charges") electric field
+In each point of homogeneous electric field a force of $\vec{F}=\vec{E}q$ acts on a charge q.  
 When a charge moves in a homogeneous electric field a distance of $\Delta x$, a work of 
 $W=\vec{F}\Delta x$ is performed, by which amount potential energy is also changed.  
-Thus, potential energy of the electron becomes $W=E_p=\vec{E}e\Delta x$ when compared to electron's starting point.  
+Thus, potential energy of e.g. an electron becomes $W=E_p=\vec{E}e\Delta x$ when compared to electron's starting point.  
 
 It is interesting how this correlates with gravitational potential energy $E_g=mgh$.  
 Objects mass $m$ relates to electric charge $e$, $h$ relates to $\Delta x$ and acceleration of gravity $g$ relates to $\vec{E}$. Only that $g$ is a simplified constant derived empirically to fit exactly gravitational field $\vec{g}$ on earth's surface.  
 The further charge is from another, the more is potential energy, the less is electric force.  
 The same goes with gravity on earth. The higher the object, the bigger potential energy and the less gravity.
 
-### Potential in electric field
-As described above, potential energy of a charge between two points in a field is $E_p=\vec{E}q\Delta x$.
+### Voltage in electric field
+As described above, potential energy of a charge between two points in a field is $E_p=\vec{E}q\Delta x$.  
+To get a more generalized view of electric field's 'strength', we get potential energy per unit of charge:  
 
-To get kind of universal potential in electric field, we divide potential energy $\vec{E_p}$ by the charge $Q$. Thus we get a general feature describing the field itself, independently from the charge in question.  
-We mark electric field potential by $V$.  
-It's unit is Volt, also marked $V=\frac{J}{C}=\frac{N\cdot m}{As}=\frac{\frac{kg\cdot m^2}{s^2}}{As}
+$V=\frac{\vec{E_p}}{Q}$.  
+
+Thus we get a generic feature describing the field itself, independently from the charge in question.  
+This is called the voltage of the electric field and we mark it by $V$.  
+It's unit is Volt, marked $V$. One volt stands for voltage between two points when one Joule is required to move a charge of one Coulomb between the points 
+
+$[V]=\frac{J}{C}=\frac{N\cdot m}{As}=\frac{\frac{kg\cdot m^2}{s^2}}{As}
 =\frac{kg\cdot m^2}{As^3}$
 
-$V=\frac{\vec{E_p}}{Q}$
-
-### Potential in homogeneous electric field
-In a homogeneous electric field potential energy for an electron was $E_p=\vec{E}e\Delta x$.
-
-As potential in general electric field for an electron is $V=\frac{\vec{E_p}}{e}$,  
-we get $V=\frac{\vec{E}e\Delta x}{e}=\vec{E}\Delta x$
-
+_Note!_  
+As potential is $V=\frac{\vec{E_p}}{e}$ and $E_p=\vec{E}e\Delta x$, we get $V=\frac{\vec{E}e\Delta x}{e}=\vec{E}\Delta x$. 
 Thus unit of electric field's strength can also be expressed as
 
 $[E]=\frac{V}{m}=\frac{\frac{J}{C}}{m}=\frac{N\cdot m}{As\cdot m}=\frac{N}{C}$
 
-Note: Electric field in metallic conductor is homogeneous.
