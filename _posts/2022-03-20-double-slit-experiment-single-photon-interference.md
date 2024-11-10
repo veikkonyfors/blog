@@ -8,7 +8,8 @@ tag: Quantum Mysteries
 ## Double slit experiment's single photon interference
 
 From 17th century onwards light was believed to be formed of particles as per widely adopted Sir Isaac Newton's understanding.  
-At the very beginning of 19th century, Thomas Young proved light must be of wave nature with his double slit experiment.   
+At the very beginning of 19th century, Thomas Young proved light must be of wave nature with his double slit experiment. In this test there is a wall between the photon source and the detector wall. It has two parallel slit-like openings. Distance of the slits is about the same size as is the wavelength of the light used and the width of each slit should be something like ten to hundred times to the wavelength.
+ 
 Which ones is it in the end? See [Being a particle](../../../2022/03/15/being-a-particle.html) for that.  
 Later on double slit experiment has been refined in various ways. E.g. it has been shown to work for electrons, atoms and even molecules of moderate sizes. See some more details on atom's case in article [Atom's reality](../../../2022/03/29/atoms-reality.html)
 
