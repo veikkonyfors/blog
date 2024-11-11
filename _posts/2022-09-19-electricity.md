@@ -51,8 +51,8 @@ Electric current is measured by amperes (amps, A): One Coulomb of elementary cha
 
 $1A=1\frac{C}{s}, \implies C=As$
 
-On a metallic wire, an electric field is created within it when it's ends are connected to a power supply. This makes loosely connected electrons on outer shell of the metal atoms to start moving in the field.   
-Power supply is a device with two poles, with the other (negative) having more electrons than the other (positive). Power supplies can be created e.g. with chemical reactions and electromagnetic radiation.
+On a metallic wire, an electric field is created within it when it's ends are connected to a power supply. This makes loosely connected electrons on outer shell of the metal atoms to start moving in the field. These electrons are 'valence' electrons participating in adjacent atoms' bonding to each other into a crystal structure. They are left as a kind of electron cloud with electrons being free to move in the electric field.  
+Power supply is a device with two poles, with the other (negative) having more electrons than the other (positive). Power supplies can be created e.g. with chemical reactions or electromagnetic radiation.
 
 Moving electric charges can also be bigger entities, like [ions](../../../2022/09/20/ions.html). If table salt, $Na^+ Cl^-$ is dissolved in water, $Na^+$ and $Cl-$ ions get separated due to water molecules dipole effect. Once an electric field is generated in this liquid, ions start to travel along the field.
  
