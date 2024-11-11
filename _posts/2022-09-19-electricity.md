@@ -56,7 +56,7 @@ Power supply is a device with two poles, with the other (negative) having more e
 
 Moving electric charges can also be bigger entities, like [ions](../../../2022/09/20/ions.html). If table salt, $Na^+ Cl^-$ is dissolved in water, $Na^+$ and $Cl-$ ions get separated due to water molecules dipole effect. Once an electric field is generated in this liquid, ions start to travel along the field.
  
-### A single charge's potential energy in [homogeneous](#potential-in-homogeneous-electric-field "electric force is the same in every point of field. Exists e.g. between two metallic plates with opposite charges") electric field
+### A single charge's potential energy in [homogeneous]( "electric force is the same in every point of field. Exists e.g. between two metallic plates with opposite charges") electric field
 In each point of homogeneous electric field a force of $\vec{F}=\vec{E}q$ acts on a charge q.  
 When a charge moves in a homogeneous electric field a distance of $\Delta x$, a work of 
 $W=\vec{F}\Delta x$ is performed, by which amount potential energy is also changed.  
