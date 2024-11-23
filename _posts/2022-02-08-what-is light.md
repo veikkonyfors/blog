@@ -13,9 +13,10 @@ People naturally think of light in connection to their vision. Common understand
 
 That's not incorrect. A bit simplistic though.
 
-Quantum-mechanically light is composed of a bundles of energy packets called photons. 
-Photons are quantums of energy making up not only visible light, but all [electromagnetic radiation]( ../../../2022/09/21/em-radiation). Photons propagate in space as [electromagnetic waves]( ../../../2024/01/11/electromagnetic-wave).
-Photons can exhibit properties of both waves and particles depending on the context. This duality can be observed in experiments like [Double slit experiment's single photon interference](../../../2022/03/20/double-slit-experiment-single-photon-interference.html)  
+Quantum-mechanically light is composed of a bundles of energy packets called photons.  
+Photons propagate in space as [electromagnetic waves]( ../../../2024/01/11/electromagnetic-wave).  
+Photons are making up not only visible light, but all [electromagnetic radiation]( ../../../2022/09/21/em-radiation).  
+Photons can exhibit properties of both waves and particles depending on the context. This duality can be observed in experiments like [Double slit experiment's single photon interference](../../../2022/03/20/double-slit-experiment-single-photon-interference.html).  
 
 Photon is born e.g. when an electron in an atom emits one in connection of returning from excited state to lower energy level. While there are other ways a photon can be created, this way is in our focus here.  
 This can happen in Sun's core (see [Tunneling]( ../../../2022/01/31/tunneling.html)) or it can happen e.g. in your electric torch. In space (or air in the latter case), it travels like a wave, mostly without interruption, as the surroundings is mostly empty.
