@@ -13,7 +13,7 @@ If one instead wants to comprehend what's underneath all that, that's not so cle
 Here I try to dig into this from more philosophical perspective.
 
 Shortly said, electromagnetic waves are disturbances in the electromagnetic field.  
-Consists of two distinct fields, electric and magnetic, living in strict orthogonal synchronized co-operation with each other. For clarity, I will concentrate only on the electric field here, but things apply to magnetic one in concurrence.
+Consists of two distinct fields, electric and magnetic, living in strict orthogonal synchronized co-operation with each other. For clarity, I will focus only on the electric field here, but things apply to magnetic one in concurrence.
 
 What's the disturbance in the electric field then? How could that be depicted?  
 
@@ -24,6 +24,9 @@ Think of this waving rope presenting the disturbance in the electric field.
 
 Now think of a case where we would vibrate the point at the sideplane only once. Only a single crest and through would travel through the rope. That's a single photon!
 
-From here on, let's concentrate on the single photon case.
+From here on, let's concentrate on the single photon case, traveling as a single through-crest pair in electric field.  
+This single disturbance on the field describes the force a charge would experience had it been on the spot where the disturbance is passing.
+
+
 
 To Be Continued
