@@ -22,7 +22,7 @@ $1C = \frac{e}{1.60217653\cdot10^{-19}} \hspace{1em} \hspace{1em} i.e. \hspace{1
 When you have two electric charges , Q and q, nearby each other, they will have a force affecting between them. Opposite charges have attractive force between them, like charges repel each other. Let's say charges are at distance r, in which case the force between them is characterized by formula
 
 <a name="coulombslaw"></a>
-$\text{Coulomb's law:} \hspace{1em} \vec{F_{e}}= \frac{1}{4\pi\epsilon_{0}} \frac{Qq}{r^2}  \sim  \frac{kg\cdot m^3}{s^2\cdot C^2}\cdot \frac{C^2}{m^2}=\frac{kg m}{s^2}=J$  
+$\text{Coulomb's law:} \hspace{1em} \vec{F_{e}}= \frac{1}{4\pi\epsilon_{0}} \frac{Qq}{r^2}  \sim  \frac{kg\cdot m^3}{s^2\cdot C^2}\cdot \frac{C^2}{m^2}=\frac{kg m}{s^2}=N$  
 Note: Vector force is along line connecting charges. Positive force is repulsive, negative is attractive.
 
 $\text{Where $\epsilon_{0}$ is vacuum permittivity:} \hspace{1em}\epsilon_{0}=8.8541878128(13)×10^{-12} \frac{F}{m}$
