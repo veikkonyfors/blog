@@ -28,7 +28,7 @@ hw.audioInput = no # 20241129 VN: was yes \\
 hw.audioOutput = no # 20241129 VN: add this \\
 hw.gps = no # 020241129 VN:  was yes
 
-### Wipe data gives
+### Wipe data
 
 AndroidStudio - Device Manager - <your AVD> - ... - Wipe data \\
 Note, this will remove all data you have gathered on the device.
