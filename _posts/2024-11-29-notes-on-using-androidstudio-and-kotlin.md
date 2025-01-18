@@ -10,12 +10,13 @@ katex: true
 Documenting events, issues, incidents and such with Android Studio and Kotlin along the way
 
 
-- [Poor emulator performance](#Poor-emulator-performance)
-	- [Emulator config changes](#Emulator-config-changes)
-	- [Wipe data](#Wipe-data)
-	- [Removing locks](#Removing-locks)
-	- [Changing AndroidStudio Emulated performance](#Changing-AndroidStudio-Emulated-performance)
-	- [Enable kvm acceleration](#Enable-kvm-acceleration)
+- [Poor emulator performance](#poor-emulator-performance)
+	- [Emulator config changes](#emulator-config-changes)
+	- [Wipe data](#wipe-data)
+	- [Removing locks](#removing-locks)
+	- [changing AndroidStudio Emulated performance](#changing-androidstudio-emulated-performance)
+	- [enable kvm acceleration](#enable-kvm-acceleration)
+- [Disabling libvirtd tricks](#disabling-libvirtd-tricks)
 
 ## Poor emulator performance
 
@@ -111,5 +112,18 @@ Unfortunately starting from within AndroidStudio still does not use kvm:
 AndroidStudio is said to recognize if acceleration is available and use it automatically. Doesn't seem to be so.
 Need to start it from command line for the time being until get it figured out how to do it from within AndroidStudio.
 
+## Disabling libvirtd tricks
+After taking above kvm emulation into use, my system started to have some network lags after having been up for a longer period without a boot. Shutdown after such a lag had been experienced also took a long time, cursor just blinked in a black screen. Eventually system was shut down though.  
+Thought libvirtd enabling in boot might cause the problem, as that was enabled while taking kvm acceleration in use.
+But sadly 
+
+	sudo systemctl disable libvirtd
+	
+didn't remove it from boot, it was still running after reboot.
+Had to disable libvirt-guests as well
+
+	sudo systemctl disable libvirt-guests
+	
+Now after reboot, libvirtd wasn't running any more.
 
 
