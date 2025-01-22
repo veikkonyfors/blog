@@ -120,9 +120,14 @@ But sadly
 	sudo systemctl disable libvirtd
 	
 didn't remove it from boot, it was still running after reboot.
-Had to disable libvirt-guests as well
+Had to disable below libvirt stuff as well
 
 	sudo systemctl disable libvirt-guests
+	sudo systemctl disable libvirtd-admin.socket
+	sudo systemctl disable libvirtd.socket
+	sudo systemctl disable libvirtd-ro.socket
+	
+	
 	
 Now after reboot, libvirtd wasn't running any more.
 

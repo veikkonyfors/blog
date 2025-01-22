@@ -25,6 +25,7 @@ Entire electric field is saturated by myriads and myriads of these fluctuations 
 
 Now think of a case where we would vibrate a point at one sideplane only once. A single crest and trough would travel through the rope. That's a single photon!
 
+<a name="singlephoton"></a>
 From here on, let's focus on the single photon case, traveling as a single trough-crest pair in electric field.  
 This single disturbance on the field depicts the force a charge would experience had it been on the spot where the disturbance is passing. Let the electric field be otherwise empty of disturbances, except for the disturbance caused by our single photon.  
 Charge is $e$ and frequency of the photon $f$. Energy associated with the photon would be $E=h\cdot f$. This energy shows up as an electric field of $\vec{E}=\frac{F}{e}$ at the impact. What is strength of the force, that's not straightforward to calculate, it's depending on top of the energy itself also on intensity and energy density of the medium.  
