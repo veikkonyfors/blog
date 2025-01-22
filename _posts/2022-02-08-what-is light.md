@@ -21,7 +21,7 @@ Photons can exhibit properties of both waves and particles depending on the cont
 Photon is born e.g. when an electron in an atom emits one in connection of returning from excited state to lower energy level. While there are other ways a photon can be created, this way is in our focus here.  
 This can happen in Sun's core (see [Tunneling]( ../../../2022/01/31/tunneling.html)) or it can happen e.g. in your electric torch. In space (or air in the latter case), it travels like a wave, mostly without interruption, as the surroundings is mostly empty.
 
-<A href="#photon_bouncing"></A>
+<A name="photon_bouncing"></A>
 Electron got excited because of another photon had previously hit it. Photon's energy caused the electron to jump to higher energy level. Photon got absorbed. Again, there's other ways for an electron to get excited, but this is the one we are interested in here.  
 However, this excited state is not stable, electrons prefer staying on their normal lowest possible energy level in the atom. Thus, after a very, very short while, electron returns back to previous lower energy level. This causes another bundle of energy to be released in the form of a photon. A photon was emitted. Just to be absorbed again once suitable atom comes across.  
 This bouncing goes on and on everywhere where atoms and photons impact. It's like throwing a ball against the wall. Ball flying through the air without bumping into anything and once reaching the wall jumps backwards. Only that the ball coming back would be a different one from that thrown.
