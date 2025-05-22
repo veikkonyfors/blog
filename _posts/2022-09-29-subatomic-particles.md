@@ -16,9 +16,18 @@ katex: true
 |"|"|"|Strange|
 |"|"|"|Top|
 |"|"|"|Bottom|
-|"|"|[Lepton]( "Half integer spin, No strong interaction, charged or neutral")|Electron|
-|"|"|"|Positron|
-|"|"|"|Muon|
+|"|"|[Lepton]( "Half integer spin, No strong interaction, charged or neutral")|[Charged]()|Electron ($e^-$)|
+|"|"|"|"|Positron ($e^+$)|
+|"|"|"|"|Muon ($\mu^-$)|
+|"|"|"|"|Antimuon ($\mu^+$)|
+|"|"|"|"|Tau ($\tau^-$)|
+|"|"|"|"|Antitau ($\tau^+$)|
+|"|"|"|[Neutral]()|Electronneutrino ($\nu_e$)|
+|"|"|"|"|Electron Antineutrino ($\bar{\nu}_e$)|
+|"|"|"|"|Muonneutrino ($\nu_\mu$)|
+|"|"|"|"|Muon Antineutrino ($\bar{\nu}_\mu$)|
+|"|"|"|"|Tauneutrino ($\nu_\tau$)|
+|"|"|"|"|Tau Antineutrino ($\bar{\nu}_\tau$)|
 |"|[Boson]( "Integer spin")|[Gauge]( "Non-zero spin, force carriers for fermions")|[Photon]( "Electromagnetic force carrier")|
 |"|"|"|[Gluon]( "Strong nuclear force carrier")|
 |"|"|"|[W Boson]( "Weak nuclear force carrier")|
