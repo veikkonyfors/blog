@@ -1,16 +1,29 @@
 <!doctype html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJRBB9VLFL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QJRBB9VLFL');
-</script>
+	
+	<script>
+		const local = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1");
+		prefix = "/"
+		if (local) { prefix = "/blog/"; }
+	</script>
+	
+	  <!-- Google tag (gtag.js) -->
+	  <!-- Not for local -->
+	  <p id="gtag"></p>
+	  <script>
+	  var node; node=document.getElementById("gtag");
+	  if (window.location.hostname != "localhost" || window.location.hostname != "127.0.0.1") { // If not local, gather stats
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJRBB9VLFL"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+	
+		  gtag('config', 'G-QJRBB9VLFL');
+		</script>
+	  }
+	  </script>
   
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +39,40 @@
     <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	
+	<style>
+		
+		#form_search input[type="text"] {
+			background-color: #555;
+			color: #000;
+		    border: 1px solid #444;
+		    padding: 5px;
+			height: 26px;
+			line-height: 26px;
+			padding: 0; 
+		}
+
+		
+		#form_search button {
+		    background-color: #222;
+		    color: #fff;
+		    border: 1px solid #444;
+		    padding: 5px 10px;
+		    cursor: pointer;
+			font-size: 13px;
+		}
+		
+		#form_search button:hover {
+		    background-color: #444;
+		}
+
+
+
+	</style>
+	
+
+
+	
     {% include head-custom.html %}
   </head>
   <body>
@@ -48,14 +95,13 @@
         <div id="title">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
-          <p id="link2blog"></p>
-          <script>
-          var node; node=document.getElementById("link2blog");
-          if(window.location.pathname != "/blog/") {
-    		node.innerHTML = '<a href="/blog/">Blog home</a>';
-    		node.style.visibility='visible'
-    		}
-          </script>
+		  
+		  <p id="link2blog"></p>
+		  <script>
+			  var node; node=document.getElementById("link2blog");
+			  node.innerHTML = '<a href="'+prefix+'">Blog home</a>';
+			  node.style.visibility='visible'
+		  </script>
 
           <hr>
           <span class="credits left">Project maintained by <a href="https://mas.to/@veikkonyfors">veikkonyfors</a></span>
@@ -63,12 +109,19 @@
           <br>
           <p id="disclaimer"></p>
           <script>
-            var node; node=document.getElementById("disclaimer");
-            if (window.location.pathname != '/blog/') {
-              node.innerHTML = '<span class="credits left"><a href="../../../1977/07/22/disclaimer">Disclaimer</a></span>';
-              node.style.visibility='visible'
-            }
+			var node; node=document.getElementById("disclaimer");
+	        node.innerHTML = '<span class="credits left"><a href="'+prefix+'/../1977/07/22/disclaimer">Disclaimer</a></span>';
+	        node.style.visibility='visible'
 		  </script>
+		  <span class="credits right">
+			<form id="form_search" action="https://www.google.com/search" method="GET">
+			    <input type="text" name="q" placeholder="Search..." />
+			    <input type="hidden" name="cx" value="b0d93fea84a2a4bf8">
+			    <button type="submit">⌕</button>
+			</form>			
+		  </span>
+		  <br>
+		  
           <hr> 
         </div>
 
