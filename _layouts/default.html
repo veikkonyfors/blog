@@ -4,7 +4,7 @@
 	
 	<script>
 		const local = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1");
-		prefix = "/"
+		prefix = "/blog/"
 		if (local) { prefix = "/blog/"; }
 	</script>
 	
@@ -110,7 +110,7 @@
           <p id="disclaimer"></p>
           <script>
 			var node; node=document.getElementById("disclaimer");
-	        node.innerHTML = '<span class="credits left"><a href="'+prefix+'/../1977/07/22/disclaimer">Disclaimer</a></span>';
+	        node.innerHTML = '<span class="credits left"><a href="'+prefix+'1977/07/22/disclaimer">Disclaimer</a></span>';
 	        node.style.visibility='visible'
 		  </script>
 		  <span class="credits right">
